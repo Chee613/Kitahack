@@ -118,10 +118,7 @@
         <div class="max-w-[1400px] mx-auto px-6 h-20 flex items-center justify-between">
             <!-- Logo -->
             <a href="#" class="flex items-center gap-2 group flex-shrink-0">
-                <div class="w-8 h-8 rounded-full bg-black flex items-center justify-center text-white group-hover:scale-110 transition-transform">
-                    <i class="fa-solid fa-circle-nodes text-sm"></i>
-                </div>
-                <span class="font-bold text-xl tracking-tight hidden lg:block">OrbAI</span>
+                <img src="image/logo1.png" alt="iSuara Logo" class="w-12 h-12 object-contain group-hover:scale-110 transition-transform">
             </a>
 
             <!-- Links (Desktop) - Scrollable container for many items -->
@@ -170,8 +167,10 @@
             </div>
 
             <!-- Headline -->
-            <h1 class="text-6xl md:text-8xl lg:text-[100px] font-black leading-[0.9] tracking-tight mb-6 text-black relative">
-                <span class="block gs-reveal" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">iSuara</span>
+            <h1 class="text-6xl md:text-8xl lg:text-[100px] font-black leading-[0.9] tracking-tight mb-6 relative">
+                <span class="block gs-reveal bg-gradient-to-r from-[#012395] via-[#FFD100] to-[#ED1C24] text-transparent bg-clip-text" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+                    iSuara
+                </span>
             </h1>
 
             <!-- Subheadline -->
@@ -196,7 +195,7 @@
     <section id="problem" class="py-24 bg-white relative border-b border-gray-100">
     <div class="max-w-4xl mx-auto px-6 text-center" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
         
-        <span class="text-xs font-bold text-red-500 tracking-widest uppercase mb-6 block">THE CHALLENGE</span>
+        <span class="text-xs font-bold text-red-500 tracking-widest uppercase mb-6 block">Problem Statement</span>
         <div class="w-16 h-16 mx-auto bg-red-50 rounded-full flex items-center justify-center text-red-500 mb-8">
             <i class="fa-solid fa-triangle-exclamation text-2xl"></i>
         </div>
@@ -838,16 +837,22 @@
             // General Fade In Up for Sections
             const sections = document.querySelectorAll('section > div');
             sections.forEach(sec => {
-                gsap.from(sec, {
-                    scrollTrigger: {
-                        trigger: sec,
-                        start: "top 85%"
+                gsap.fromTo(sec,
+                    {
+                        y: 30,
+                        opacity: 0
                     },
-                    y: 30,
-                    opacity: 0,
-                    duration: 0.8,
-                    ease: "power2.out"
-                });
+                    {
+                        scrollTrigger: {
+                            trigger: sec,
+                            start: "top 85%"
+                        },
+                        y: 0,
+                        opacity: 1,
+                        duration: 0.8,
+                        ease: "power2.out"
+                    }
+                );
             });
 
             // SDG Parallax Cards
