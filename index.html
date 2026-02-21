@@ -2,8 +2,8 @@
 <html lang="en" class="scroll-smooth" style="scroll-behavior: smooth;"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orb AI | Project Report</title>
-    <meta name="description" content="Detailed overview of the Orb AI automation project.">
+    <title>iSuara | Project Report</title>
+    <meta name="description" content="Detailed overview of the iSuara project.">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -118,7 +118,7 @@
         <div class="max-w-[1400px] mx-auto px-6 h-20 flex items-center justify-between">
             <!-- Logo -->
             <a href="#" class="flex items-center gap-2 group flex-shrink-0">
-                <img src="image/logo1.png" alt="iSuara Logo" class="w-12 h-12 object-contain group-hover:scale-110 transition-transform">
+                <img src="image/logo1-removebg.png" alt="iSuara Logo" class="w-12 h-12 object-contain group-hover:scale-110 transition-transform">
             </a>
 
             <!-- Links (Desktop) - Scrollable container for many items -->
@@ -418,138 +418,131 @@
 
     <!-- 4. TECHNICAL ARCHITECTURE -->
     <section id="architecture" class="py-24 bg-[#F8F8F8]">
-        <div class="max-w-[1400px] mx-auto px-6" style="translate: none; rotate: none; scale: none; opacity: 0; transform: translate(0px, 30px);">
+        <div class="max-w-[1400px] mx-auto px-6">
             <span class="text-xs font-bold text-gray-500 tracking-widest uppercase mb-2 block">TECH STACK</span>
             <h2 class="text-4xl font-extrabold text-black mb-12">Technical Architecture</h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-                <!-- Frontend -->
-                <div class="glass-card rounded-2xl p-8">
-                    <h3 class="text-lg font-bold mb-4 border-b border-gray-200 pb-2">Frontend</h3>
-                    <ul class="space-y-3">
-                        <li class="flex items-center gap-3"><i class="fa-brands fa-react text-blue-500"></i> React.js</li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-wind text-cyan-500"></i> Tailwind CSS</li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-chart-line text-purple-500"></i> D3.js</li>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 items-stretch">
+                
+                <div class="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow h-full">
+                    <h3 class="text-lg font-bold mb-4 border-b border-gray-100 pb-2">Frontend</h3>
+                    <ul class="space-y-3 text-sm text-gray-700">
+                        <li class="flex items-center gap-3"><i class="fa-brands fa-react text-blue-500 w-5" aria-hidden="true"></i> React.js</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-wind text-cyan-500 w-5" aria-hidden="true"></i> Tailwind CSS</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-video text-purple-500 w-5" aria-hidden="true"></i> WebRTC Stream</li>
                     </ul>
                 </div>
-                <!-- Backend -->
-                <div class="glass-card rounded-2xl p-8">
-                    <h3 class="text-lg font-bold mb-4 border-b border-gray-200 pb-2">Backend</h3>
-                    <ul class="space-y-3">
-                        <li class="flex items-center gap-3"><i class="fa-brands fa-python text-yellow-500"></i> Python (FastAPI)</li>
-                        <li class="flex items-center gap-3"><i class="fa-brands fa-node text-green-500"></i> Node.js</li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-server text-gray-500"></i> Redis</li>
+
+                <div class="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow h-full">
+                    <h3 class="text-lg font-bold mb-4 border-b border-gray-100 pb-2">Vision & Backend</h3>
+                    <ul class="space-y-3 text-sm text-gray-700">
+                        <li class="flex items-center gap-3"><i class="fa-brands fa-python text-yellow-500 w-5" aria-hidden="true"></i> Python (FastAPI)</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-eye text-green-500 w-5" aria-hidden="true"></i> OpenCV</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-hand-dots text-gray-600 w-5" aria-hidden="true"></i> Google MediaPipe</li>
                     </ul>
                 </div>
-                <!-- AI/ML -->
-                <div class="glass-card rounded-2xl p-8">
-                    <h3 class="text-lg font-bold mb-4 border-b border-gray-200 pb-2">AI Engine</h3>
-                    <ul class="space-y-3">
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-brain text-pink-500"></i> OpenAI GPT-4</li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-layer-group text-orange-500"></i> LangChain</li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-database text-blue-800"></i> Pinecone</li>
+
+                <div class="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow h-full">
+                    <h3 class="text-lg font-bold mb-4 border-b border-gray-100 pb-2">AI Engine</h3>
+                    <ul class="space-y-3 text-sm text-gray-700">
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-bolt text-orange-500 w-5" aria-hidden="true"></i> TensorFlow (LSTM)</li>
+                        <li class="flex items-center gap-3"><i class="fa-brands fa-google text-blue-600 w-5" aria-hidden="true"></i> Google AI Studio</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-sparkles text-purple-600 w-5" aria-hidden="true"></i> Gemini 2.5 Flash</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-square-root-variable text-red-500 w-5" aria-hidden="true"></i> NumPy (EMA Math)</li>
                     </ul>
                 </div>
-                <!-- Infrastructure -->
-                <div class="glass-card rounded-2xl p-8">
-                    <h3 class="text-lg font-bold mb-4 border-b border-gray-200 pb-2">DevOps</h3>
-                    <ul class="space-y-3">
-                        <li class="flex items-center gap-3"><i class="fa-brands fa-aws text-orange-400"></i> AWS</li>
-                        <li class="flex items-center gap-3"><i class="fa-brands fa-docker text-blue-600"></i> Docker</li>
-                        <li class="flex items-center gap-3"><i class="fa-solid fa-infinity text-gray-700"></i> CI/CD Pipeline</li>
+
+                <div class="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow h-full">
+                    <h3 class="text-lg font-bold mb-4 border-b border-gray-100 pb-2">Deployment</h3>
+                    <ul class="space-y-3 text-sm text-gray-700">
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-microchip text-gray-800 w-5" aria-hidden="true"></i> Edge ML (.tflite)</li>
+                        <li class="flex items-center gap-3"><i class="fa-brands fa-docker text-blue-600 w-5" aria-hidden="true"></i> Docker</li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-network-wired text-green-600 w-5" aria-hidden="true"></i> Async Threading</li>
                     </ul>
                 </div>
+
             </div>
         </div>
     </section>
 
     <!-- 5. SYSTEM FLOW / IMPLEMENTATION -->
-    <section id="flow" class="py-24 bg-white">
-        <div class="max-w-[1400px] mx-auto px-6" style="translate: none; rotate: none; scale: none; opacity: 0; transform: translate(0px, 30px);">
-            <div class="text-center mb-16">
-                <span class="text-xs font-bold text-gray-500 tracking-widest uppercase mb-2 block">WORKFLOW</span>
-                <h2 class="text-4xl font-extrabold text-black">System Implementation</h2>
-                <p class="text-gray-600 mt-2">From raw data ingestion to actionable output.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-5 gap-4 items-center">
-                <!-- Step 1 -->
-                <div class="text-center group">
-                    <div class="w-16 h-16 mx-auto bg-black text-white rounded-2xl flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-envelope-open-text"></i>
-                    </div>
-                    <h3 class="font-bold text-sm">Data Ingestion</h3>
-                    <p class="text-xs text-gray-500 mt-1">API &amp; Webhooks</p>
-                </div>
-
-                <!-- Arrow -->
-                <div class="hidden md:flex justify-center text-gray-300">
-                    <i class="fa-solid fa-arrow-right text-xl"></i>
-                </div>
-
-                <!-- Step 2 -->
-                <div class="text-center group">
-                    <div class="w-16 h-16 mx-auto bg-black text-white rounded-2xl flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-filter"></i>
-                    </div>
-                    <h3 class="font-bold text-sm">Preprocessing</h3>
-                    <p class="text-xs text-gray-500 mt-1">Cleaning &amp; Norm</p>
-                </div>
-
-                <!-- Arrow -->
-                <div class="hidden md:flex justify-center text-gray-300">
-                    <i class="fa-solid fa-arrow-right text-xl"></i>
-                </div>
-
-                <!-- Step 3 -->
-                <div class="text-center group">
-                    <div class="w-16 h-16 mx-auto bg-orb-medium text-white rounded-2xl flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform relative">
-                        <i class="fa-solid fa-brain"></i>
-                        <div class="absolute -top-2 -right-2 w-4 h-4 bg-red-500 rounded-full animate-pulse"></div>
-                    </div>
-                    <h3 class="font-bold text-sm">AI Inference</h3>
-                    <p class="text-xs text-gray-500 mt-1">LLM Processing</p>
-                </div>
-
-                <!-- Row 2 for mobile or keep straight for desktop if possible. Let's wrap next 2 steps below or keep linear. -->
-            </div>
+    <section id="flow" class="py-16 bg-[#F8F8F8] overflow-hidden">
+        <div class="max-w-[1400px] mx-auto px-4">
             
-            <div class="grid grid-cols-1 md:grid-cols-5 gap-4 items-center mt-8 md:mt-12">
-                 <!-- Empty spacers for alignment diagram look -->
-                 <div class="hidden md:block"></div>
-                 <div class="hidden md:flex justify-center text-gray-300 rotate-90 md:rotate-0">
-                    <!-- Connector line logic is complex in grid, simplifying -->
-                 </div>
-                 <div class="hidden md:flex justify-center text-gray-300">
-                    <i class="fa-solid fa-arrow-down text-xl"></i>
-                 </div>
-                 <div class="hidden md:block"></div>
-                 <div class="hidden md:block"></div>
+            <div class="text-center mb-10">
+                <span class="text-xs font-bold text-gray-500 tracking-widest uppercase mb-1 block">WORKFLOW</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-black">System Implementation</h2>
+                <p class="text-gray-600 text-sm mt-2">The real-time, 5-stage pipeline powering iSuara's dual-layer architecture.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-5 gap-4 items-center mt-4">
-                <!-- Step 5 (Output) -->
-                <div class="text-center group md:col-start-5">
-                    <div class="w-16 h-16 mx-auto bg-green-500 text-white rounded-2xl flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-check-circle"></i>
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-4 relative">
+                
+                <div class="hidden lg:block absolute top-10 left-10 right-10 h-0.5 bg-gray-200 z-0"></div>
+
+                <div class="bg-white border border-gray-100 p-5 rounded-2xl shadow-sm hover:shadow-md transition-all relative z-10 group">
+                    <div class="absolute -top-3 -left-3 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-md">1</div>
+                    <div class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center text-blue-500 mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-video" aria-hidden="true"></i>
                     </div>
-                    <h3 class="font-bold text-sm">Execution</h3>
-                    <p class="text-xs text-gray-500 mt-1">Database Update</p>
+                    <h3 class="font-bold text-gray-900 mb-3 text-sm">Video Ingestion</h3>
+                    <ul class="space-y-2 text-gray-600 text-xs">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-angle-right text-blue-400 mt-0.5"></i> OpenCV video capture runs locally.</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-angle-right text-blue-400 mt-0.5"></i> Captures steady 30fps stream.</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-angle-right text-blue-400 mt-0.5"></i> Stores rolling 30-frame memory buffer.</li>
+                    </ul>
                 </div>
 
-                <!-- Arrow -->
-                <div class="hidden md:flex justify-center text-gray-300 md:col-start-4">
-                    <i class="fa-solid fa-arrow-right text-xl"></i>
+                <div class="bg-white border border-gray-100 p-5 rounded-2xl shadow-sm hover:shadow-md transition-all relative z-10 group">
+                    <div class="absolute -top-3 -left-3 w-8 h-8 bg-gray-600 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-md">2</div>
+                    <div class="w-10 h-10 bg-gray-50 rounded-xl flex items-center justify-center text-gray-600 mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-hand-dots" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-3 text-sm">Skeletal Extraction</h3>
+                    <ul class="space-y-2 text-gray-600 text-xs">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-angle-right text-gray-400 mt-0.5"></i> MediaPipe maps 3D hand/pose nodes.</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-angle-right text-gray-400 mt-0.5"></i> Compiles 258-point dense vector.</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-angle-right text-gray-400 mt-0.5"></i> Normalizes to shoulder & applies EMA smoothing.</li>
+                    </ul>
                 </div>
 
-                 <!-- Step 4 -->
-                 <div class="text-center group md:col-start-3">
-                    <div class="w-16 h-16 mx-auto bg-black text-white rounded-2xl flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-user-check"></i>
+                <div class="bg-white border border-gray-100 p-5 rounded-2xl shadow-sm hover:shadow-md transition-all relative z-10 group border-t-4 border-t-orange-500">
+                    <div class="absolute -top-3 -left-3 w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-md">3</div>
+                    <div class="w-10 h-10 bg-orange-50 rounded-xl flex items-center justify-center text-orange-500 mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-microchip" aria-hidden="true"></i>
                     </div>
-                    <h3 class="font-bold text-sm">Human Review</h3>
-                    <p class="text-xs text-gray-500 mt-1">Low Confidence Flag</p>
+                    <h3 class="font-bold text-gray-900 mb-3 text-sm">LSTM Inference</h3>
+                    <ul class="space-y-2 text-gray-600 text-xs">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-angle-right text-orange-400 mt-0.5"></i> Feeds optimized TensorFlow Lite edge model.</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-angle-right text-orange-400 mt-0.5"></i> Evaluates temporal motion probability.</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-angle-right text-orange-400 mt-0.5"></i> Triggers on >60% confidence + 10-frame cooldown.</li>
+                    </ul>
                 </div>
+
+                <div class="bg-white border border-gray-100 p-5 rounded-2xl shadow-sm hover:shadow-md transition-all relative z-10 group border-t-4 border-t-purple-500">
+                    <div class="absolute -top-3 -left-3 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-md">4</div>
+                    <div class="w-10 h-10 bg-purple-50 rounded-xl flex items-center justify-center text-purple-600 mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-brands fa-google" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-3 text-sm">Semantic Context</h3>
+                    <ul class="space-y-2 text-gray-600 text-xs">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-angle-right text-purple-400 mt-0.5"></i> Async threading prevents UI freeze.</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-angle-right text-purple-400 mt-0.5"></i> Gemini 2.5 Flash API maps glosses to Malay.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-black border border-gray-900 p-5 rounded-2xl shadow-sm hover:shadow-md transition-all relative z-10 group">
+                    <div class="absolute -top-3 -left-3 w-8 h-8 bg-black border border-gray-700 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-md">5</div>
+                    <div class="w-10 h-10 bg-gray-800 rounded-xl flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-closed-captioning" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="font-bold text-white mb-3 text-sm">Execution & Output</h3>
+                    <ul class="space-y-2 text-gray-300 text-xs">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-angle-right text-green-400 mt-0.5"></i> Receives parsed Malay payload.</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-angle-right text-green-400 mt-0.5"></i> Re-syncs text to main execution thread.</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-angle-right text-green-400 mt-0.5"></i> Renders live OpenCV subtitles overlay.</li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </section>
@@ -921,6 +914,29 @@
                             duration: 2,
                             snap: { innerText: 1 },
                             ease: "power1.inOut"
+                        });
+                    }
+                });
+            });
+
+            const floatCounters = document.querySelectorAll('.counter-float');
+            floatCounters.forEach(counter => {
+                const target = parseFloat(counter.getAttribute('data-target'));
+                const proxy = { val: 0 }; // Our invisible object to animate
+                
+                ScrollTrigger.create({
+                    trigger: counter,
+                    start: "top 80%",
+                    once: true,
+                    onEnter: () => {
+                        gsap.to(proxy, {
+                            val: target,
+                            duration: 2,
+                            ease: "power2.out",
+                            onUpdate: () => {
+                                // Injects the safe, formatted string into the DOM
+                                counter.innerText = proxy.val.toFixed(1); 
+                            }
                         });
                     }
                 });
