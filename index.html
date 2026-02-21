@@ -611,45 +611,44 @@
 
     <!-- 7. CHALLENGES FACED -->
     <section id="challenges" class="py-24 bg-white overflow-hidden">
-        <div class="max-w-[1400px] mx-auto px-6" style="translate: none; rotate: none; scale: none; opacity: 0; transform: translate(0px, 30px);">
+        <div class="max-w-[1400px] mx-auto px-6">
+            
             <div class="text-center mb-16">
-                <span class="text-xs font-bold text-gray-500 tracking-widest uppercase mb-2 block">OBSTACLES</span>
-                <h2 class="text-4xl font-extrabold text-black">Challenges Faced</h2>
+                <div class="w-16 h-16 mx-auto bg-red-50 rounded-full flex items-center justify-center text-red-500 mb-6 shadow-sm">
+                    <i class="fa-solid fa-road-barrier text-2xl" aria-hidden="true"></i>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-black">Challenges Faced</h2>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Challenge 1 -->
-                <div class="bg-white border border-gray-100 p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-                    <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center text-red-500 mb-4">
-                        <i class="fa-solid fa-shield-halved"></i>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+                <div class="bg-white border border-gray-100 p-8 rounded-2xl shadow-sm hover:scale-105 hover:shadow-xl transition-all duration-300">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-500 mb-4">
+                        <i class="fa-solid fa-video" aria-hidden="true"></i>
                     </div>
-                    <h3 class="font-bold text-lg mb-2">Data Privacy &amp; GDPR</h3>
-                    <p class="text-gray-600 text-sm mb-4">Handling sensitive PII data required strict compliance measures that initially slowed down AI training.</p>
-                    <div class="bg-gray-50 p-3 rounded-lg text-xs font-medium text-gray-700">
-                        <span class="font-bold text-black">Fix:</span> Implemented local vector stores and PII redaction pipelines before sending data to LLM.
-                    </div>
+                    <h3 class="font-bold text-lg mb-2">Dataset Inconsistency</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        BIM Sign Bank videos lack standardized framing (varying between hand-only and half-body shots) and utilize a single camera angle, complicating spatial tracking.
+                    </p>
                 </div>
-                <!-- Challenge 2 -->
-                <div class="bg-white border border-gray-100 p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+
+                <div class="bg-white border border-gray-100 p-8 rounded-2xl shadow-sm hover:scale-105 hover:shadow-xl transition-all duration-300">
                     <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center text-orange-500 mb-4">
-                        <i class="fa-solid fa-scale-unbalanced"></i>
+                        <i class="fa-solid fa-stopwatch" aria-hidden="true"></i>
                     </div>
-                    <h3 class="font-bold text-lg mb-2">Scalability Issues</h3>
-                    <p class="text-gray-600 text-sm mb-4">During peak load (Monday mornings), the queue system bottlenecked, causing timeouts.</p>
-                    <div class="bg-gray-50 p-3 rounded-lg text-xs font-medium text-gray-700">
-                        <span class="font-bold text-black">Fix:</span> Migrated to Kubernetes auto-scaling clusters and Redis implementation.
-                    </div>
+                    <h3 class="font-bold text-lg mb-2">Compute & Time Trade-offs</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Training a model on the entire 2,966-word BIM lexicon consumed a lots of time. We had to downsample to a curated subset of high-frequency academic terms.
+                    </p>
                 </div>
-                <!-- Challenge 3 -->
-                <div class="bg-white border border-gray-100 p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+
+                <div class="bg-white border border-gray-100 p-8 rounded-2xl shadow-sm hover:scale-105 hover:shadow-xl transition-all duration-300">
                     <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center text-purple-500 mb-4">
-                        <i class="fa-solid fa-code-branch"></i>
+                        <i class="fa-solid fa-brain" aria-hidden="true"></i>
                     </div>
-                    <h3 class="font-bold text-lg mb-2">Integration Legacy</h3>
-                    <p class="text-gray-600 text-sm mb-4">The client's legacy ERP system had no REST API, only SOAP, making connection difficult.</p>
-                    <div class="bg-gray-50 p-3 rounded-lg text-xs font-medium text-gray-700">
-                        <span class="font-bold text-black">Fix:</span> Built a custom middleware wrapper to translate JSON to XML/SOAP envelopes.
-                    </div>
+                    <h3 class="font-bold text-lg mb-2">Model Hallucinations</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        The current sequence-prediction model occasionally misclassifies ambiguous gestures, resulting in incorrect raw word outputs before passing through the GenAI semantic layer.
+                    </p>
                 </div>
             </div>
         </div>
@@ -701,37 +700,85 @@
         </div>
     </section>
 
-    <!-- 9. IMPACT -->
+        <!-- 9. IMPACT -->
     <section id="impact" class="py-24 bg-white border-t border-gray-100">
-        <div class="max-w-[1400px] mx-auto px-6 text-center" style="translate: none; rotate: none; scale: none; opacity: 0; transform: translate(0px, 30px);">
-             <div class="w-16 h-16 mx-auto bg-green-100 rounded-full flex items-center justify-center text-green-600 mb-6">
-                <i class="fa-solid fa-leaf text-2xl"></i>
+        <div class="max-w-[1400px] mx-auto px-6 text-center">
+            
+            <div class="w-16 h-16 mx-auto bg-blue-50 rounded-full flex items-center justify-center text-blue-600 mb-6">
+                <i class="fa-solid fa-hands-asl-interpreting text-2xl" aria-hidden="true"></i>
             </div>
             <h2 class="text-5xl md:text-7xl font-black text-black mb-6">Real World Impact</h2>
-            <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-16">Measuring the tangible difference Orb AI has made in operational efficiency and sustainability.</p>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-16">
+                Measuring the tangible difference iSuara makes in academic equality, financial relief, and career readiness for the Deaf and Hard of Hearing (DHH) community.
+            </p>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="p-8 bg-gray-50 rounded-3xl">
+            <div class="text-left mb-8">
+                <h3 class="text-2xl font-bold text-gray-900 border-b border-gray-100 pb-3">The Population Gap & Crisis</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+                <div class="p-8 bg-gray-50 border border-gray-100 rounded-3xl transition-transform hover:-translate-y-1">
                     <div class="text-6xl font-black text-black mb-2 flex justify-center items-baseline">
-                        <span class="counter" data-target="40">0</span>%
+                        <span class="counter" data-target="44">0</span>k+
                     </div>
-                    <div class="text-sm font-bold text-gray-500 uppercase tracking-widest">Reduction in Paper Usage</div>
+                    <div class="text-sm font-bold text-gray-900 uppercase tracking-widest mb-3">DHH Individuals</div>
+                    <p class="text-sm text-gray-600">Registered individuals with hearing impairments in Malaysia needing access.</p>
                 </div>
-                <div class="p-8 bg-gray-50 rounded-3xl">
+                
+                <div class="p-8 bg-gray-50 border border-gray-100 rounded-3xl transition-transform hover:-translate-y-1">
                     <div class="text-6xl font-black text-black mb-2 flex justify-center items-baseline">
-                        <span class="counter" data-target="120">0</span>k
+                        <span class="counter" data-target="60">0</span>
                     </div>
-                    <div class="text-sm font-bold text-gray-500 uppercase tracking-widest">Hours Saved Annually</div>
+                    <div class="text-sm font-bold text-gray-900 uppercase tracking-widest mb-3">Certified Interpreters</div>
+                    <p class="text-sm text-gray-600">A staggering 1:733 ratio of interpreters to Deaf individuals nationwide.</p>
                 </div>
-                <div class="p-8 bg-gray-50 rounded-3xl">
+                
+                <div class="p-8 bg-gray-50 border border-gray-100 rounded-3xl transition-transform hover:-translate-y-1">
                     <div class="text-6xl font-black text-black mb-2 flex justify-center items-baseline">
-                        $<span class="counter" data-target="2">0</span>M
+                        <span class="counter-float" data-target="0.3">0</span>%
                     </div>
-                    <div class="text-sm font-bold text-gray-500 uppercase tracking-widest">Operational Cost Savings</div>
+                    <div class="text-sm font-bold text-gray-900 uppercase tracking-widest mb-3">PWD in Civil Service</div>
+                    <p class="text-sm text-gray-600">Falling severely short of the 1% government quota due to communication barriers.</p>
                 </div>
+            </div>
+
+            <div class="text-left mb-8">
+                <h3 class="text-2xl font-bold text-gray-900 border-b border-gray-100 pb-3">Qualitative Transformation</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+                
+                <div class="bg-white border border-gray-100 p-8 rounded-3xl shadow-sm hover:shadow-lg transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-graduation-cap text-xl" aria-hidden="true"></i>
+                    </div>
+                    <h4 class="font-bold text-xl mb-3 text-gray-900">Academic Equality</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        With iSuara, they can ask questions, participate in group assignments, and debate with professors seamlessly.
+                    </p>
+                </div>
+
+                <div class="bg-white border border-gray-100 p-8 rounded-3xl shadow-sm hover:shadow-lg transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center text-green-600 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-wallet text-xl" aria-hidden="true"></i>
+                    </div>
+                    <h4 class="font-bold text-xl mb-3 text-gray-900">Financial Relief</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Students and universities no longer need to hire expensive human interpreters (RM 100+/hour) for everyday study sessions or casual meetings.
+                </div>
+
+                <div class="bg-white border border-gray-100 p-8 rounded-3xl shadow-sm hover:shadow-lg transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center text-orange-500 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-briefcase text-xl" aria-hidden="true"></i>
+                    </div>
+                    <h4 class="font-bold text-xl mb-3 text-gray-900">Career Readiness</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        A portable AI translator bridges gap during interview session and office communication, easen DHH graduates when entered the mainstream workforce.
+                    </p>
+                </div>
+
             </div>
         </div>
     </section>
+
 
     <!-- FOOTER CTA -->
     <section id="contact" class="py-32 bg-black text-white relative overflow-hidden text-center px-6">
