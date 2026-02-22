@@ -114,37 +114,50 @@
 <body class="antialiased selection:bg-black selection:text-white" style="">
 
     <!-- NAVIGATION -->
-    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 border-b glass shadow-sm border-white/20">
-        <div class="max-w-[1400px] mx-auto px-6 h-20 flex items-center justify-between">
-            <!-- Logo -->
-            <a href="#" class="flex items-center gap-2 group flex-shrink-0">
-                <img src="image/logo1-removebg.png" alt="iSuara Logo" class="w-12 h-12 object-contain group-hover:scale-110 transition-transform">
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 border-b border-white/20">
+        <div class="max-w-[1400px] mx-auto px-4 md:px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-2 group flex-shrink-0 z-50">
+                <img src="image/logo1-removebg.png" alt="iSuara Logo" class="w-10 h-10 md:w-12 md:h-12 object-contain group-hover:scale-110 transition-transform">
             </a>
 
-            <!-- Links (Desktop) - Scrollable container for many items -->
-            <div class="hidden md:flex items-center gap-6 bg-white/50 px-8 py-3 rounded-full border border-white/40 backdrop-blur-md shadow-sm overflow-x-auto no-scrollbar max-w-[800px]">
-                <a href="#problem" class="text-xs font-medium text-gray-600 hover:text-black transition-colors whitespace-nowrap">Problem</a>
-                <a href="#sdgs" class="text-xs font-medium text-gray-600 hover:text-black transition-colors whitespace-nowrap">SDGs</a>
-                <a href="#solution" class="text-xs font-medium text-gray-600 hover:text-black transition-colors whitespace-nowrap">Solution</a>
-                <a href="#architecture" class="text-xs font-medium text-gray-600 hover:text-black transition-colors whitespace-nowrap">Architecture</a>
-                <a href="#flow" class="text-xs font-medium text-gray-600 hover:text-black transition-colors whitespace-nowrap">Flow</a>
-                <a href="#testing" class="text-xs font-medium text-gray-600 hover:text-black transition-colors whitespace-nowrap">Testing</a>
-                <a href="#challenges" class="text-xs font-medium text-gray-600 hover:text-black transition-colors whitespace-nowrap">Challenges</a>
-                <a href="#roadmap" class="text-xs font-medium text-gray-600 hover:text-black transition-colors whitespace-nowrap">Roadmap</a>
-                <a href="#impact" class="text-xs font-medium text-gray-600 hover:text-black transition-colors whitespace-nowrap">Impact</a>
+            <div class="hidden lg:flex items-center gap-6 bg-white/50 px-8 py-3 rounded-full border border-white/40 backdrop-blur-md shadow-sm">
+                <a href="#problem" class="text-xs font-medium text-gray-600 hover:text-black transition-colors">Problem</a>
+                <a href="#sdgs" class="text-xs font-medium text-gray-600 hover:text-black transition-colors">SDGs</a>
+                <a href="#solution" class="text-xs font-medium text-gray-600 hover:text-black transition-colors">Solution</a>
+                <a href="#architecture" class="text-xs font-medium text-gray-600 hover:text-black transition-colors">Architecture</a>
+                <a href="#flow" class="text-xs font-medium text-gray-600 hover:text-black transition-colors">Flow</a>
+                <a href="#testing" class="text-xs font-medium text-gray-600 hover:text-black transition-colors">Testing</a>
+                <a href="#challenges" class="text-xs font-medium text-gray-600 hover:text-black transition-colors">Challenges</a>
+                <a href="#roadmap" class="text-xs font-medium text-gray-600 hover:text-black transition-colors">Roadmap</a>
             </div>
 
-            <!-- CTA & Mobile Menu -->
-            <div class="flex items-center gap-4 flex-shrink-0">
-                <a href="#impact" class="hidden lg:block bg-black text-white px-6 py-2.5 rounded-xl text-sm font-semibold hover:bg-gray-800 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+            <div class="flex items-center gap-4 flex-shrink-0 z-50">
+                <a href="#impact" class="hidden md:block bg-black text-white px-6 py-2.5 rounded-xl text-sm font-semibold hover:bg-gray-800 transition-all shadow-lg hover:-translate-y-0.5">
                     View Impact
                 </a>
-                <button class="md:hidden text-2xl text-black">
+                <button id="menu-btn" class="lg:hidden text-2xl text-black focus:outline-none">
                     <i class="fa-solid fa-bars"></i>
                 </button>
             </div>
         </div>
     </nav>
+
+    <div id="mobile-menu" class="fixed inset-0 bg-white/95 backdrop-blur-lg z-40 transform translate-x-full transition-transform duration-300 flex flex-col pt-24 px-8 pb-8 overflow-y-auto lg:hidden">
+        <div class="flex flex-col gap-6 text-xl font-bold text-gray-900 mt-8">
+            <a href="#problem" class="mobile-link border-b border-gray-100 pb-2">Problem</a>
+            <a href="#sdgs" class="mobile-link border-b border-gray-100 pb-2">SDGs</a>
+            <a href="#solution" class="mobile-link border-b border-gray-100 pb-2">Solution</a>
+            <a href="#architecture" class="mobile-link border-b border-gray-100 pb-2">Architecture</a>
+            <a href="#flow" class="mobile-link border-b border-gray-100 pb-2">System Flow</a>
+            <a href="#testing" class="mobile-link border-b border-gray-100 pb-2">Testing</a>
+            <a href="#challenges" class="mobile-link border-b border-gray-100 pb-2">Challenges</a>
+            <a href="#roadmap" class="mobile-link border-b border-gray-100 pb-2">Roadmap</a>
+            <a href="#impact" class="mobile-link border-b border-gray-100 pb-2">Impact</a>
+        </div>
+        <a href="#impact" class="mt-8 bg-black text-white text-center py-4 rounded-xl font-semibold shadow-lg mobile-link">
+            View Full Impact
+        </a>
+    </div>
 
     <!-- HERO SECTION -->
     <section class="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-20">
@@ -161,27 +174,25 @@
             <div class="absolute w-[600px] h-[600px] bg-gradient-to-tr from-gray-100 to-white rounded-full blur-3xl opacity-60"></div>
         </div>
 
-        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto flex flex-col items-center" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
-            
-            <div class="inline-flex items-center gap-2 bg-white border border-gray-200 rounded-full px-4 py-1.5 mb-8 shadow-sm animate-fade-in-up">
+        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto flex flex-col items-center">
+            <div class="inline-flex items-center gap-2 bg-white border border-gray-200 rounded-full px-4 py-1.5 mb-6 md:mb-8 shadow-sm gs-reveal">
                 <i class="fa-solid fa-wand-magic-sparkles text-xs text-black"></i>
-                <span class="text-xs font-semibold uppercase tracking-wide text-gray-600">Project Documentation</span>
+                <span class="text-[10px] md:text-xs font-semibold uppercase tracking-wide text-gray-600">Project Documentation</span>
             </div>
 
-            <!-- Headline -->
-            <h1 class="text-6xl md:text-8xl lg:text-[100px] font-black leading-[0.9] tracking-tight mb-6 relative">
-                <span class="block gs-reveal bg-gradient-to-r from-[#012395] via-[#FFD100] to-[#ED1C24] text-transparent bg-clip-text" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+            <h1 class="text-5xl md:text-8xl lg:text-[100px] font-black leading-[1.1] md:leading-[0.9] tracking-tight mb-4 md:mb-6 gs-reveal">
+                <span class="block bg-gradient-to-r from-[#012395] via-[#FFD100] to-[#ED1C24] text-transparent bg-clip-text pb-2">
                     iSuara
                 </span>
             </h1>
 
-            <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-10 gs-reveal font-light" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+            <p class="text-base md:text-xl text-gray-700 max-w-2xl mx-auto mb-8 md:mb-10 gs-reveal font-light px-4">
                 A real-time, bi-directional AI bridge that transforms sign language into text for seamless interaction.
             </p>
 
-            <div class="flex flex-col sm:flex-row gap-4 gs-reveal" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
-                <a href="https://www.thestar.com.my/lifestyle/living/2025/10/02/only-60-interpreters-for-44000-deaf-malaysians---why-the-community-struggles#:~:text=Only%2060%20interpreters%20for%2044%2C000,Living" class="bg-black text-white px-8 py-4 rounded-xl font-semibold flex items-center justify-center gap-2 hover:bg-gray-800 transition-all">
-                    Read More About News<i class="fa-solid fa-arrow-down text-sm"></i>
+            <div class="w-full sm:w-auto px-4 gs-reveal">
+                <a href="https://www.thestar.com.my/lifestyle/living/2025/10/02/only-60-interpreters-for-44000-deaf-malaysians---why-the-community-struggles" target="_blank" class="bg-black text-white px-6 md:px-8 py-3 md:py-4 rounded-xl font-semibold flex items-center justify-center gap-2 hover:bg-gray-800 transition-all w-full sm:w-auto">
+                    Read More About News <i class="fa-solid fa-arrow-right text-sm"></i>
                 </a>
             </div>
         </div>
@@ -911,224 +922,139 @@
 
     <!-- SCRIPTS -->
     <script>
-        // 1. GSAP Animations
-        document.addEventListener("DOMContentLoaded", (event) => {
+        document.addEventListener("DOMContentLoaded", () => {
             gsap.registerPlugin(ScrollTrigger);
 
-            // Hero Text Reveal
-            gsap.from(".gs-reveal", {
-                y: 50,
-                opacity: 0,
-                duration: 1,
-                stagger: 0.2,
-                ease: "power3.out"
-            });
+            // 1. Mobile Menu Toggle Logic
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+            
+            if (menuBtn) {
+                const icon = menuBtn.querySelector('i');
+                function toggleMenu() {
+                    mobileMenu.classList.toggle('translate-x-full');
+                    if (mobileMenu.classList.contains('translate-x-full')) {
+                        icon.classList.remove('fa-xmark');
+                        icon.classList.add('fa-bars');
+                        document.body.style.overflow = '';
+                    } else {
+                        icon.classList.remove('fa-bars');
+                        icon.classList.add('fa-xmark');
+                        document.body.style.overflow = 'hidden'; 
+                    }
+                }
+                menuBtn.addEventListener('click', toggleMenu);
+                mobileLinks.forEach(link => link.addEventListener('click', toggleMenu));
+            }
 
-            // Radar Circle Expansion
-            gsap.to(".radar-circle", {
-                scale: 1.2,
-                opacity: 0,
-                duration: 4,
-                stagger: 0.5,
-                repeat: -1,
-                ease: "none"
-            });
+            // 2. Navbar Scroll Effect
+            const navbar = document.getElementById('navbar');
+            if (navbar) {
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 50) {
+                        navbar.classList.add('glass', 'shadow-sm');
+                        navbar.classList.remove('border-white/20', 'border-transparent');
+                    } else {
+                        navbar.classList.remove('glass', 'shadow-sm');
+                        navbar.classList.add('border-white/20', 'border-transparent');
+                    }
+                });
+            }
 
-            // Count Up Numbers
-            const counters = document.querySelectorAll('.counter');
-            counters.forEach(counter => {
-                const target = +counter.getAttribute('data-target');
-                ScrollTrigger.create({
-                    trigger: counter,
-                    start: "top 80%",
-                    once: true,
-                    onEnter: () => {
-                        gsap.to(counter, {
-                            innerText: target,
-                            duration: 2,
-                            snap: { innerText: 1 },
-                            ease: "power1.inOut"
-                        });
+            // 3. Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
                     }
                 });
             });
 
-            const floatCounters = document.querySelectorAll('.counter-float');
-            floatCounters.forEach(counter => {
-                const target = parseFloat(counter.getAttribute('data-target'));
-                const proxy = { val: 0 }; // Our invisible object to animate
-                
-                ScrollTrigger.create({
-                    trigger: counter,
-                    start: "top 80%",
-                    once: true,
-                    onEnter: () => {
-                        gsap.to(proxy, {
-                            val: target,
-                            duration: 2,
-                            ease: "power2.out",
-                            onUpdate: () => {
-                                // Injects the safe, formatted string into the DOM
-                                counter.innerText = proxy.val.toFixed(1); 
-                            }
-                        });
-                    }
-                });
-            });
+            // 4. GSAP matchMedia for Responsive Animations
+            let mm = gsap.matchMedia();
 
-            // General Fade In Up for Sections
-            const sections = document.querySelectorAll('section > div');
-            sections.forEach(sec => {
-                gsap.fromTo(sec,
-                    {
-                        y: 30,
-                        opacity: 0
-                    },
-                    {
+            // DESKTOP ONLY: Sliding Deck Effect
+            mm.add("(min-width: 768px)", () => {
+                const sdgCards = gsap.utils.toArray(".sdg-card");
+                if (sdgCards.length > 0) {
+                    gsap.set(sdgCards, { x: 300, opacity: 0 }); // Hide them initially on desktop
+                    const tl = gsap.timeline({
                         scrollTrigger: {
-                            trigger: sec,
-                            start: "top 85%"
-                        },
-                        y: 0,
-                        opacity: 1,
-                        duration: 0.8,
-                        ease: "power2.out"
-                    }
-                );
+                            trigger: "#sdgs",
+                            start: "top top",
+                            end: "bottom bottom",
+                            scrub: 1
+                        }
+                    });
+
+                    sdgCards.forEach((card, i) => {
+                        tl.to(card, { 
+                            x: 0, 
+                            opacity: 1, 
+                            rotation: i % 2 === 0 ? -3 : 3, 
+                            duration: 1, 
+                            ease: "power2.out" 
+                        }, i * 0.8);
+                    });
+                }
             });
 
-            // SDG Parallax Cards
-            const sdgSection = document.getElementById("sdgs");
-            const sdgCards = gsap.utils.toArray(".sdg-card");
-
-            // Ensure elements exist before running animation
-            if (sdgSection && sdgCards.length > 0) {
-                // Create the timeline
-                const tl = gsap.timeline({
-                    scrollTrigger: {
-                        trigger: "#sdgs",
-                        start: "top top",
-                        end: "bottom bottom",
-                        scrub: 1
-                        // Note: 'pin' is handled via CSS (sticky class)
-                    }
-                });
-
-                // Loop through each card and animate them
-                sdgCards.forEach((card, i) => {
-                    tl.to(
-                        card,
+            // ALL DEVICES: Fade-ins and Number Counters
+            mm.add("all", () => {
+                // Fix for disappearing sections: Fade them in!
+                const sections = document.querySelectorAll('section > div');
+                sections.forEach(sec => {
+                    gsap.fromTo(sec,
+                        { y: 30, opacity: 0 },
                         {
-                            x: 0,
-                            opacity: 1,
-                            rotation: i % 2 === 0 ? -3 : 3,
-                            duration: 1,
-                            ease: "power2.out"
-                        },
-                        i * 0.8
+                            scrollTrigger: { trigger: sec, start: "top 85%" },
+                            y: 0, opacity: 1, duration: 0.8, ease: "power2.out"
+                        }
                     );
                 });
-            }
-        });
 
-        // 2. Navbar Scroll Effect
-        const navbar = document.getElementById('navbar');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add('glass', 'shadow-sm');
-                navbar.classList.remove('border-transparent');
-                navbar.classList.add('border-white/20');
-            } else {
-                navbar.classList.remove('glass', 'shadow-sm', 'border-white/20');
-                navbar.classList.add('border-transparent');
-            }
-        });
+                // Hero Animations
+                gsap.from(".gs-reveal", { y: 30, opacity: 0, duration: 1, stagger: 0.15, ease: "power3.out" });
+                gsap.to(".radar-circle", { scale: 1.2, opacity: 0, duration: 4, stagger: 0.5, repeat: -1, ease: "none" });
 
-        // 3. Smooth Scroll for Anchor Links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
+                // Counter numbers
+                const counters = document.querySelectorAll('.counter');
+                counters.forEach(counter => {
+                    const target = +counter.getAttribute('data-target');
+                    ScrollTrigger.create({
+                        trigger: counter,
+                        start: "top 80%",
+                        once: true,
+                        onEnter: () => {
+                            gsap.to(counter, {
+                                innerText: target, duration: 2, snap: { innerText: 1 }, ease: "power1.inOut"
+                            });
+                        }
+                    });
+                });
+
+                const floatCounters = document.querySelectorAll('.counter-float');
+                floatCounters.forEach(counter => {
+                    const target = parseFloat(counter.getAttribute('data-target'));
+                    const proxy = { val: 0 };
+                    ScrollTrigger.create({
+                        trigger: counter,
+                        start: "top 80%",
+                        once: true,
+                        onEnter: () => {
+                            gsap.to(proxy, {
+                                val: target, duration: 2, ease: "power2.out",
+                                onUpdate: () => {
+                                    counter.innerText = proxy.val.toFixed(1); 
+                                }
+                            });
+                        }
+                    });
                 });
             });
         });
     </script>
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
-
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
 <wps-translate-entry></wps-translate-entry></body></html>
