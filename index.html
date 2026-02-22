@@ -350,69 +350,103 @@
     </section>
 
     <!-- 3. SOLUTION OVERVIEW -->
-    <section id="solution" class="py-24 bg-white">
-        <div class="max-w-[1400px] mx-auto px-6" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
-            <div class="text-center mb-16">
-                <span class="text-xs font-bold text-gray-500 tracking-widest uppercase mb-2 block">SOLUTION</span>
-                <h2 class="text-4xl md:text-5xl font-extrabold text-black mb-4">The Orb Platform</h2>
-                <p class="text-gray-600">A unified ecosystem for intelligent automation.</p>
+    <section id="solution" class="py-24 bg-white border-b border-gray-100">
+        <div class="max-w-[1400px] mx-auto px-6">
+            
+            <div class="text-center mb-20 max-w-4xl mx-auto">
+                <span class="text-xs font-bold text-blue-500 tracking-widest uppercase mb-4 block">THE SOLUTION</span>
+                <h2 class="text-4xl md:text-6xl font-black text-black mb-6 tracking-tight">The iSuara Bridge</h2>
+                <p class="text-xl md:text-2xl text-gray-600 leading-relaxed font-light">
+                    A real-time, bi-directional AI bridge designed to empower the Deaf and Hard of Hearing (DHH) community. iSuara translates Malaysian Sign Language (BIM) into natural text instantly, eliminating the need for scarce human interpreters in academia and the workplace.
+                </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 h-auto">
-                <!-- Large Feature -->
-                <div class="md:col-span-2 bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-8 relative overflow-hidden group border border-gray-100 min-h-[300px]">
-                    <div class="relative z-10">
-                        <h3 class="text-2xl font-bold mb-2">Automated Intelligence</h3>
-                        <p class="text-gray-600 max-w-sm">We deployed a custom LLM orchestration layer that ingests unstructured data from emails and PDFs, structuring it into actionable JSON objects for ERP systems.</p>
-                    </div>
-                    <div class="absolute bottom-8 right-8 w-40 h-40 bg-black/5 rounded-full border border-black/5 flex items-center justify-center">
-                        <i class="fa-solid fa-robot text-6xl text-black/20"></i>
-                    </div>
-                </div>
+            <div class="mb-24">
+                <h3 class="text-2xl font-bold text-center mb-10 text-gray-900">How It Works</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+                    <div class="hidden md:block absolute top-12 left-[16.66%] right-[16.66%] h-0.5 bg-gray-100 z-0"></div>
 
-                <!-- Secondary Feature -->
-                <div class="bg-white border border-gray-100 rounded-3xl p-8 shadow-sm hover:shadow-md transition-all">
-                    <div class="w-10 h-10 bg-black rounded-lg flex items-center justify-center text-white mb-4">
-                        <i class="fa-solid fa-bolt"></i>
+                    <div class="relative z-10 flex flex-col items-center text-center">
+                        <div class="w-24 h-24 bg-white border-4 border-gray-50 rounded-full flex items-center justify-center text-blue-500 text-3xl mb-6 shadow-sm z-10">
+                            <i class="fa-solid fa-camera" aria-hidden="true"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">1. Input</h4>
+                        <p class="text-sm text-gray-600 max-w-xs">
+                            A standard webcam captures the user's continuous BIM gestures in real-time, requiring no specialized gloves or hardware.
+                        </p>
                     </div>
-                    <h3 class="text-xl font-bold mb-1">Real-time Sync</h3>
-                    <p class="text-gray-500 text-sm">Updates databases instantly (&lt; 500ms latency).</p>
-                </div>
 
-                <!-- Third Feature -->
-                <div class="bg-white border border-gray-100 rounded-3xl p-8 shadow-sm hover:shadow-md transition-all">
-                    <h3 class="text-xl font-bold mb-1">Predictive Analytics</h3>
-                    <p class="text-gray-500 text-sm mb-4">Forecasting trends based on historical data.</p>
-                    <div class="flex items-end gap-1 h-20">
-                         <div class="w-1/5 bg-gray-200 rounded-t h-[40%]"></div>
-                        <div class="w-1/5 bg-gray-300 rounded-t h-[60%]"></div>
-                        <div class="w-1/5 bg-gray-400 rounded-t h-[30%]"></div>
-                        <div class="w-1/5 bg-gray-800 rounded-t h-[80%]"></div>
-                        <div class="w-1/5 bg-black rounded-t h-[50%]"></div>
+                    <div class="relative z-10 flex flex-col items-center text-center">
+                        <div class="w-24 h-24 bg-white border-4 border-gray-50 rounded-full flex items-center justify-center text-purple-500 text-3xl mb-6 shadow-sm z-10">
+                            <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">2. Processing</h4>
+                        <p class="text-sm text-gray-600 max-w-xs">
+                            An edge-optimized LSTM model extracts skeletal movements, while a cloud-based semantic layer pieces the raw signs into context.
+                        </p>
                     </div>
-                </div>
 
-                 <!-- Fourth Feature -->
-                 <div class="md:col-span-2 bg-black text-white rounded-3xl p-8 relative overflow-hidden flex flex-col md:flex-row items-center">
-                    <div class="relative z-10 max-w-sm">
-                        <h3 class="text-2xl font-bold mb-2">Human-in-the-Loop</h3>
-                        <p class="text-gray-400">Critical decisions are flagged for human review, ensuring 99.9% accuracy.</p>
-                    </div>
-                    <div class="mt-6 md:mt-0 md:ml-auto w-full md:w-1/3 bg-gray-900 rounded-xl p-4 border border-gray-800">
-                         <div class="flex items-center gap-2 mb-2">
-                             <div class="w-2 h-2 rounded-full bg-green-500"></div>
-                             <span class="text-xs text-green-500 uppercase">System Active</span>
-                         </div>
-                         <div class="h-2 bg-gray-700 rounded-full w-full overflow-hidden">
-                             <div class="h-full bg-blue-500 w-[85%]"></div>
-                         </div>
-                         <div class="flex justify-between text-[10px] text-gray-500 mt-1">
-                             <span>Processing</span>
-                             <span>85%</span>
-                         </div>
+                    <div class="relative z-10 flex flex-col items-center text-center">
+                        <div class="w-24 h-24 bg-white border-4 border-gray-50 rounded-full flex items-center justify-center text-green-500 text-3xl mb-6 shadow-sm z-10">
+                            <i class="fa-regular fa-comment-dots" aria-hidden="true"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">3. Output</h4>
+                        <p class="text-sm text-gray-600 max-w-xs">
+                            Fluid, grammatically correct Malay sentences are rendered instantly as live subtitles on the recipient's screen.
+                        </p>
                     </div>
                 </div>
             </div>
+
+            <div>
+                <h3 class="text-2xl font-bold text-center mb-10 text-gray-900">Key Capabilities</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    
+                    <article class="bg-gray-50 border border-gray-100 p-8 rounded-3xl hover:-translate-y-1 hover:shadow-lg transition-all duration-300 group">
+                        <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-orange-500 mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3 text-gray-900">Real-Time Edge Inference</h4>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Built for speed. By running our custom LSTM model natively on the edge via TensorFlow Lite, we achieve ultra-low latency inference, ensuring conversations feel natural and uninterrupted.
+                        </p>
+                    </article>
+
+                    <article class="bg-gray-50 border border-gray-100 p-8 rounded-3xl hover:-translate-y-1 hover:shadow-lg transition-all duration-300 group">
+                        <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-purple-600 mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-brain" aria-hidden="true"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3 text-gray-900">Semantic Contextualization</h4>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Sign language syntax doesn't map 1:1 to spoken languages. Our integration with Gemini 2.5 Flash acts as a semantic bridge, transforming raw, disjointed glosses into perfectly structured Malay sentences.
+                        </p>
+                    </article>
+
+                    <article class="bg-gray-50 border border-gray-100 p-8 rounded-3xl hover:-translate-y-1 hover:shadow-lg transition-all duration-300 group">
+                        <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-green-500 mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3 text-gray-900">Hardware Agnostic & Private</h4>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            No expensive depth cameras or proprietary wearable gloves required. iSuara runs entirely off a standard 2D laptop webcam, making it universally accessible while processing skeletal data locally to preserve user privacy.
+                        </p>
+                    </article>
+
+                    <article class="bg-gray-50 border border-gray-100 p-8 rounded-3xl hover:-translate-y-1 hover:shadow-lg transition-all duration-300 group">
+                        <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-blue-500 mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-building-columns" aria-hidden="true"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3 text-gray-900">Academic & Professional Focus</h4>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Unlike basic consumer translation apps, our vocabulary bank is specifically curated for tertiary education and corporate environments, allowing DHH users to participate in complex STEM discussions.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+
         </div>
     </section>
 
