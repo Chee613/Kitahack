@@ -218,14 +218,33 @@
     <section id="problem" class="py-24 bg-white relative border-b border-gray-100">
     <div class="max-w-4xl mx-auto px-6 text-center" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
         
-        <span class="text-xs font-bold text-red-500 tracking-widest uppercase mb-6 block">Problem Statement</span>
-        <div class="w-16 h-16 mx-auto bg-red-50 rounded-full flex items-center justify-center text-red-500 mb-8">
-            <i class="fa-solid fa-triangle-exclamation text-2xl"></i>
+        <div class="text-center max-w-4xl mx-auto mb-12">
+            <span class="text-xs font-bold text-red-500 tracking-widest uppercase mb-6 block">Problem Statement</span>
+            <div class="w-16 h-16 mx-auto bg-red-50 rounded-full flex items-center justify-center text-red-500 mb-8 shadow-sm">
+                <i class="fa-solid fa-triangle-exclamation text-2xl"></i>
+            </div>
+            
+            <h2 class="text-3xl md:text-5xl font-serif text-gray-900 leading-tight mb-8">
+                "Severe shortage of Malaysian Sign Language (BIM) interpreters" 
+            </h2>
         </div>
-        
-        <h2 class="text-3xl md:text-5xl font-serif text-gray-900 leading-tight mb-8">
-            "The severe shortage of Malaysian Sign Language (BIM) interpreters currently standing at just 60 professionals serving a population of 44,000 Deaf Malaysians with ratio ≈ 1:733"
-        </h2>
+
+        <div class="max-w-4xl mx-auto bg-red-50 border border-red-100 rounded-2xl p-8 mb-16 shadow-sm">
+            <div class="flex flex-col md:flex-row items-center justify-between divide-y md:divide-y-0 md:divide-x divide-red-200">
+                <div class="w-full md:w-1/3 px-6 py-4 md:py-0 text-center">
+                    <div class="text-4xl md:text-5xl font-bold text-gray-900 mb-2">60</div>
+                    <div class="text-sm font-semibold text-gray-700 uppercase tracking-wider">Registered Interpreters</div>
+                </div>
+                <div class="w-full md:w-1/3 px-6 py-4 md:py-0 text-center">
+                    <div class="text-4xl md:text-5xl font-bold text-gray-900 mb-2">44,000</div>
+                    <div class="text-sm font-semibold text-gray-700 uppercase tracking-wider">Deaf Malaysians</div>
+                </div>
+                <div class="w-full md:w-1/3 px-6 py-4 md:py-0 text-center">
+                    <div class="text-5xl md:text-6xl font-extrabold text-red-600 mb-2">1:733</div>
+                    <div class="text-sm font-bold text-red-800 uppercase tracking-wider">Critical Ratio</div>
+                </div>
+            </div>
+        </div>
 
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mt-16">
             
@@ -279,102 +298,95 @@
 
     <!-- 2. SDGs TACKLED -->
     <section id="sdgs" class="relative h-[500vh] bg-[#F8F8F8]">
+    
+    <div class="sticky top-0 h-screen overflow-hidden flex flex-col items-center justify-center" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
         
-        <!-- Sticky Container -->
-        <div class="sticky top-0 h-screen overflow-hidden flex flex-col items-center justify-center" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
-            
-            <!-- Huge Background Text -->
-            <div class="absolute inset-0 flex items-center justify-center z-0 pointer-events-none">
-                <h2 class="text-[15vw] font-black text-gray-200 leading-none text-center tracking-tighter uppercase opacity-80">
-                    GLOBAL<br>GOALS
-                </h2>
-            </div>
-
-            <!-- Cards Container -->
-            <div id="sdg-cards-container" class="relative w-full max-w-5xl h-[500px] flex items-center justify-center z-10">
-                
-                <!-- Card 1: SDG 4 -->
-                <div class="sdg-card absolute w-80 md:w-96 min-h-[480px] rounded-3xl p-8 bg-white border-l-[12px] border-l-[#C5192D] shadow-2xl flex flex-col justify-between opacity-0" style="transform: translate(320px, 0px) rotate(10.0001deg); z-index: 10; translate: none; rotate: none; scale: none; opacity: 0;">
-                    <div>
-                        <div class="flex justify-between items-start mb-6">
-                            <div class="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-[#C5192D] text-white shadow-sm">
-                                <span class="text-3xl font-black">4</span>
-                            </div>
-                            <span class="text-xs font-bold text-[#C5192D] uppercase tracking-widest bg-red-50 px-2 py-1 rounded">Education</span>
-                        </div>
-                        <h3 class="text-3xl font-bold text-gray-900 font-serif mb-4">Quality Education</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
-                            <span class="font-bold text-[#C5192D]">Target 4.5:</span> Eliminate gender disparities &amp; ensure equal access for the vulnerable.
-                        </p>
-                        <p class="text-gray-600 text-sm leading-relaxed">
-                            <span class="font-bold text-[#C5192D]">Target 4.a:</span> Build safe, non-violent, inclusive &amp; effective learning environments.
-                        </p>
-                    </div>
-                    <div class="mt-4 pt-4 border-t border-gray-100">
-                        <i class="fa-solid fa-graduation-cap text-[#C5192D] text-2xl"></i>
-                    </div>
-                </div>
-
-                <!-- Card 2: SDG 8 -->
-                <div class="sdg-card absolute w-80 md:w-96 min-h-[480px] rounded-3xl p-8 bg-white border-l-[12px] border-l-[#A21942] shadow-2xl flex flex-col justify-between opacity-0" style="transform: translate(320px, 0px) rotate(10.0001deg); z-index: 20; translate: none; rotate: none; scale: none; opacity: 0;">
-                    <div>
-                         <div class="flex justify-between items-start mb-6">
-                            <div class="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-[#A21942] text-white shadow-sm">
-                                <span class="text-3xl font-black">8</span>
-                            </div>
-                            <span class="text-xs font-bold text-[#A21942] uppercase tracking-widest bg-pink-50 px-2 py-1 rounded">Economy</span>
-                        </div>
-                        <h3 class="text-3xl font-bold text-gray-900 font-serif mb-4">Decent Work &amp; Growth</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">
-                            <span class="font-bold text-[#A21942]">Target 8.5:</span> Achieve full &amp; productive employment and decent work for all women and men, including young people and persons with disabilities.
-                        </p>
-                    </div>
-                    <div class="mt-4 pt-4 border-t border-gray-100">
-                        <i class="fa-solid fa-briefcase text-[#A21942] text-2xl"></i>
-                    </div>
-                </div>
-
-                <!-- Card 3: SDG 9 -->
-                <div class="sdg-card absolute w-80 md:w-96 min-h-[480px] rounded-3xl p-8 bg-white border-l-[12px] border-l-[#FD6925] shadow-2xl flex flex-col justify-between opacity-0" style="transform: translate(320px, 0px) rotate(10.0001deg); z-index: 30; translate: none; rotate: none; scale: none; opacity: 0;">
-                    <div>
-                         <div class="flex justify-between items-start mb-6">
-                            <div class="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-[#FD6925] text-white shadow-sm">
-                                <span class="text-3xl font-black">9</span>
-                            </div>
-                            <span class="text-xs font-bold text-[#FD6925] uppercase tracking-widest bg-orange-50 px-2 py-1 rounded">Innovation</span>
-                        </div>
-                        <h3 class="text-3xl font-bold text-gray-900 font-serif mb-4">Industry &amp; Infrastructure</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">
-                            <span class="font-bold text-[#FD6925]">Target 9.c:</span> Significantly increase access to ICT and provide universal and affordable access to the Internet.
-                        </p>
-                    </div>
-                    <div class="mt-4 pt-4 border-t border-gray-100">
-                        <i class="fa-solid fa-industry text-[#FD6925] text-2xl"></i>
-                    </div>
-                </div>
-
-                <!-- Card 4: SDG 10 -->
-                <div class="sdg-card absolute w-80 md:w-96 min-h-[480px] rounded-3xl p-8 bg-white border-l-[12px] border-l-[#DD1367] shadow-2xl flex flex-col justify-between opacity-0" style="transform: translate(384px, 0px) rotate(10.0001deg); z-index: 40; translate: none; rotate: none; scale: none; opacity: 0;">
-                    <div>
-                         <div class="flex justify-between items-start mb-6">
-                            <div class="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-[#DD1367] text-white shadow-sm">
-                                <span class="text-3xl font-black">10</span>
-                            </div>
-                            <span class="text-xs font-bold text-[#DD1367] uppercase tracking-widest bg-pink-50 px-2 py-1 rounded">Equality</span>
-                        </div>
-                        <h3 class="text-3xl font-bold text-gray-900 font-serif mb-4">Reduced Inequalities</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">
-                            <span class="font-bold text-[#DD1367]">Target 10.2:</span> Promote universal social, economic and political inclusion of all, irrespective of age, sex, disability, race, ethnicity, or status.
-                        </p>
-                    </div>
-                    <div class="mt-4 pt-4 border-t border-gray-100">
-                        <i class="fa-solid fa-scale-balanced text-[#DD1367] text-2xl"></i>
-                    </div>
-                </div>
-
-            </div>
+        <div class="absolute inset-0 flex items-center justify-center z-0 pointer-events-none">
+            <h2 class="text-[15vw] font-black text-gray-200 leading-none text-center tracking-tighter uppercase opacity-80">
+                GLOBAL<br>GOALS
+            </h2>
         </div>
-    </section>
+
+        <div id="sdg-cards-container" class="relative w-full max-w-5xl h-[600px] flex items-center justify-center z-10">
+            
+            <div class="sdg-card absolute w-96 md:w-[420px] min-h-[540px] rounded-3xl p-10 bg-white border-l-[12px] border-l-[#C5192D] shadow-2xl flex flex-col justify-between opacity-0" style="transform: translate(320px, 0px) rotate(10.0001deg); z-index: 10; translate: none; rotate: none; scale: none; opacity: 0;">
+                <div>
+                    <div class="flex justify-between items-start mb-8">
+                        <div class="inline-flex items-center justify-center w-20 h-20 rounded-xl bg-[#C5192D] text-white shadow-sm">
+                            <span class="text-4xl font-black">4</span>
+                        </div>
+                        <span class="text-xs font-bold text-[#C5192D] uppercase tracking-widest bg-red-50 px-3 py-1.5 rounded">Education</span>
+                    </div>
+                    <h3 class="text-3xl font-bold text-gray-900 font-serif mb-5">Quality Education</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-5">
+                        <span class="font-bold text-[#C5192D]">Target 4.5:</span> Eliminate gender disparities &amp; ensure equal access for the vulnerable.
+                    </p>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        <span class="font-bold text-[#C5192D]">Target 4.a:</span> Build safe, non-violent, inclusive &amp; effective learning environments.
+                    </p>
+                </div>
+                <div class="mt-6 pt-6 border-t border-gray-100">
+                    <i class="fa-solid fa-graduation-cap text-[#C5192D] text-3xl"></i>
+                </div>
+            </div>
+
+            <div class="sdg-card absolute w-96 md:w-[420px] min-h-[540px] rounded-3xl p-10 bg-white border-l-[12px] border-l-[#A21942] shadow-2xl flex flex-col justify-between opacity-0" style="transform: translate(320px, 0px) rotate(10.0001deg); z-index: 20; translate: none; rotate: none; scale: none; opacity: 0;">
+                <div>
+                     <div class="flex justify-between items-start mb-8">
+                        <div class="inline-flex items-center justify-center w-20 h-20 rounded-xl bg-[#A21942] text-white shadow-sm">
+                            <span class="text-4xl font-black">8</span>
+                        </div>
+                        <span class="text-xs font-bold text-[#A21942] uppercase tracking-widest bg-pink-50 px-3 py-1.5 rounded">Economy</span>
+                    </div>
+                    <h3 class="text-3xl font-bold text-gray-900 font-serif mb-5">Decent Work &amp; Growth</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        <span class="font-bold text-[#A21942]">Target 8.5:</span> Achieve full &amp; productive employment and decent work for all women and men, including young people and persons with disabilities.
+                    </p>
+                </div>
+                <div class="mt-6 pt-6 border-t border-gray-100">
+                    <i class="fa-solid fa-briefcase text-[#A21942] text-3xl"></i>
+                </div>
+            </div>
+
+            <div class="sdg-card absolute w-96 md:w-[420px] min-h-[540px] rounded-3xl p-10 bg-white border-l-[12px] border-l-[#FD6925] shadow-2xl flex flex-col justify-between opacity-0" style="transform: translate(320px, 0px) rotate(10.0001deg); z-index: 30; translate: none; rotate: none; scale: none; opacity: 0;">
+                <div>
+                     <div class="flex justify-between items-start mb-8">
+                        <div class="inline-flex items-center justify-center w-20 h-20 rounded-xl bg-[#FD6925] text-white shadow-sm">
+                            <span class="text-4xl font-black">9</span>
+                        </div>
+                        <span class="text-xs font-bold text-[#FD6925] uppercase tracking-widest bg-orange-50 px-3 py-1.5 rounded">Innovation</span>
+                    </div>
+                    <h3 class="text-3xl font-bold text-gray-900 font-serif mb-5">Industry &amp; Infrastructure</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        <span class="font-bold text-[#FD6925]">Target 9.c:</span> Significantly increase access to ICT and provide universal and affordable access to the Internet.
+                    </p>
+                </div>
+                <div class="mt-6 pt-6 border-t border-gray-100">
+                    <i class="fa-solid fa-industry text-[#FD6925] text-3xl"></i>
+                </div>
+            </div>
+
+            <div class="sdg-card absolute w-96 md:w-[420px] min-h-[540px] rounded-3xl p-10 bg-white border-l-[12px] border-l-[#DD1367] shadow-2xl flex flex-col justify-between opacity-0" style="transform: translate(384px, 0px) rotate(10.0001deg); z-index: 40; translate: none; rotate: none; scale: none; opacity: 0;">
+                <div>
+                     <div class="flex justify-between items-start mb-8">
+                        <div class="inline-flex items-center justify-center w-20 h-20 rounded-xl bg-[#DD1367] text-white shadow-sm">
+                            <span class="text-4xl font-black">10</span>
+                        </div>
+                        <span class="text-xs font-bold text-[#DD1367] uppercase tracking-widest bg-pink-50 px-3 py-1.5 rounded">Equality</span>
+                    </div>
+                    <h3 class="text-3xl font-bold text-gray-900 font-serif mb-5">Reduced Inequalities</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        <span class="font-bold text-[#DD1367]">Target 10.2:</span> Promote universal social, economic and political inclusion of all, irrespective of age, sex, disability, race, ethnicity, or status.
+                    </p>
+                </div>
+                <div class="mt-6 pt-6 border-t border-gray-100">
+                    <i class="fa-solid fa-scale-balanced text-[#DD1367] text-3xl"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
     <!-- 3. SOLUTION OVERVIEW -->
     <section id="solution" class="py-24 bg-white border-b border-gray-100">
@@ -383,96 +395,163 @@
             <div class="text-center mb-20 max-w-4xl mx-auto">
                 <span class="text-xs font-bold text-blue-500 tracking-widest uppercase mb-4 block">THE SOLUTION</span>
                 <h2 class="text-4xl md:text-6xl font-black text-black mb-6 tracking-tight">The iSuara Bridge</h2>
-                <p class="text-xl md:text-2xl text-gray-600 leading-relaxed font-light">
-                    A real-time, bi-directional AI bridge designed to empower the Deaf and Hard of Hearing (DHH) community. iSuara translates Malaysian Sign Language (BIM) into natural text instantly, eliminating the need for scarce human interpreters in academia and the workplace.
-                </p>
             </div>
 
             <div class="mb-24">
-                <h3 class="text-2xl font-bold text-center mb-10 text-gray-900">How It Works</h3>
-                
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
-                    <div class="hidden md:block absolute top-12 left-[16.66%] right-[16.66%] h-0.5 bg-gray-100 z-0"></div>
+    <h3 class="text-2xl font-bold text-center mb-10 text-gray-900">How It Works</h3>
+    
+    <style>
+        @keyframes sequenceFocus {
+            0% { 
+                opacity: 0.3; 
+                transform: translateY(0) scale(1);
+            }
+            /* Smoothly reach the peak and hold */
+            12%, 22% { 
+                opacity: 1; 
+                transform: translateY(-12px) scale(1.05);
+            }
+            /* Smoothly fade out just as the next item starts its 0% */
+            34%, 100% { 
+                opacity: 0.3; 
+                transform: translateY(0) scale(1);
+            }
+        }
+        
+        .animate-step {
+            animation: sequenceFocus 9s infinite cubic-bezier(0.4, 0, 0.2, 1);
+            will-change: opacity, transform;
+            opacity: 0.3; 
+        }
+        
+        .delay-1 { animation-delay: 0s; }
+        .delay-2 { animation-delay: 3s; }
+        .delay-3 { animation-delay: 6s; }
 
-                    <div class="relative z-10 flex flex-col items-center text-center">
-                        <div class="w-24 h-24 bg-white border-4 border-gray-50 rounded-full flex items-center justify-center text-blue-500 text-3xl mb-6 shadow-sm z-10">
-                            <i class="fa-solid fa-camera" aria-hidden="true"></i>
-                        </div>
-                        <h4 class="font-bold text-lg mb-2">1. Input</h4>
-                        <p class="text-sm text-gray-600 max-w-xs">
-                            A standard webcam captures the user's continuous BIM gestures in real-time, requiring no specialized gloves or hardware.
-                        </p>
-                    </div>
+        /* --- NEW HOVER LOGIC --- */
+        /* 1. Pause all animations when the grid is hovered to keep them in sync */
+        .how-it-works-grid:hover .animate-step {
+            animation-play-state: paused;
+        }
+        
+        /* 2. Force the specifically hovered item to fully pop out and become readable */
+        .how-it-works-grid .animate-step:hover {
+            opacity: 1 !important;
+            transform: translateY(-12px) scale(1.05) !important;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
 
-                    <div class="relative z-10 flex flex-col items-center text-center">
-                        <div class="w-24 h-24 bg-white border-4 border-gray-50 rounded-full flex items-center justify-center text-purple-500 text-3xl mb-6 shadow-sm z-10">
-                            <i class="fa-solid fa-microchip" aria-hidden="true"></i>
-                        </div>
-                        <h4 class="font-bold text-lg mb-2">2. Processing</h4>
-                        <p class="text-sm text-gray-600 max-w-xs">
-                            An edge-optimized LSTM model extracts skeletal movements, while a cloud-based semantic layer pieces the raw signs into context.
-                        </p>
-                    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative how-it-works-grid">
+        <div class="hidden md:block absolute top-12 left-[16.66%] right-[16.66%] h-0.5 bg-gray-200 z-0"></div>
 
-                    <div class="relative z-10 flex flex-col items-center text-center">
-                        <div class="w-24 h-24 bg-white border-4 border-gray-50 rounded-full flex items-center justify-center text-green-500 text-3xl mb-6 shadow-sm z-10">
-                            <i class="fa-regular fa-comment-dots" aria-hidden="true"></i>
-                        </div>
-                        <h4 class="font-bold text-lg mb-2">3. Output</h4>
-                        <p class="text-sm text-gray-600 max-w-xs">
-                            Fluid, grammatically correct Malay sentences are rendered instantly as live subtitles on the recipient's screen.
-                        </p>
-                    </div>
-                </div>
+        <div class="relative z-10 flex flex-col items-center text-center animate-step delay-1 cursor-default">
+            <div class="w-24 h-24 bg-white border-4 border-gray-50 rounded-full flex items-center justify-center text-blue-500 text-3xl mb-6 shadow-sm z-10 transition-shadow">
+                <i class="fa-solid fa-camera" aria-hidden="true"></i>
             </div>
+            <h4 class="font-bold text-lg mb-2">1. Input</h4>
+            <p class="text-sm text-gray-600 max-w-xs">
+                A standard webcam captures the user's continuous BIM gestures in real-time, requiring no specialized gloves or hardware.
+            </p>
+        </div>
 
-            <div>
-                <h3 class="text-2xl font-bold text-center mb-10 text-gray-900">Key Capabilities</h3>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="relative z-10 flex flex-col items-center text-center animate-step delay-2 cursor-default">
+            <div class="w-24 h-24 bg-white border-4 border-gray-50 rounded-full flex items-center justify-center text-purple-500 text-3xl mb-6 shadow-sm z-10 transition-shadow">
+                <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+            </div>
+            <h4 class="font-bold text-lg mb-2">2. Processing</h4>
+            <p class="text-sm text-gray-600 max-w-xs">
+                An edge-optimized LSTM model extracts skeletal movements, while a cloud-based semantic layer pieces the raw signs into context.
+            </p>
+        </div>
+
+        <div class="relative z-10 flex flex-col items-center text-center animate-step delay-3 cursor-default">
+            <div class="w-24 h-24 bg-white border-4 border-gray-50 rounded-full flex items-center justify-center text-green-500 text-3xl mb-6 shadow-sm z-10 transition-shadow">
+                <i class="fa-regular fa-comment-dots" aria-hidden="true"></i>
+            </div>
+            <h4 class="font-bold text-lg mb-2">3. Output</h4>
+            <p class="text-sm text-gray-600 max-w-xs">
+                Fluid, grammatically correct Malay sentences are rendered instantly as live subtitles on the recipient's screen.
+            </p>
+        </div>
+    </div>
+</div>
+
+            <div class="mb-24">
+    <h3 class="text-2xl font-bold text-center mb-10 text-gray-900">Key Capabilities</h3>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="capabilities-grid">
+        
+        <article class="capability-card opacity-0 translate-y-12 transition-all duration-700 ease-out delay-100 bg-gray-50 border border-gray-100 p-8 rounded-3xl hover:-translate-y-1 hover:shadow-lg group">
+            <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-orange-500 mb-6 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-3 text-gray-900">Real-Time Edge Inference</h4>
+            <p class="text-sm text-gray-600 leading-relaxed">
+                Built for speed. By running our custom LSTM model natively on the edge via TensorFlow Lite, we achieve ultra-low latency inference, ensuring conversations feel natural and uninterrupted.
+            </p>
+        </article>
+
+        <article class="capability-card opacity-0 translate-y-12 transition-all duration-700 ease-out delay-100 bg-gray-50 border border-gray-100 p-8 rounded-3xl hover:-translate-y-1 hover:shadow-lg group">
+            <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-purple-600 mb-6 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-brain" aria-hidden="true"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-3 text-gray-900">Semantic Contextualization</h4>
+            <p class="text-sm text-gray-600 leading-relaxed">
+                Sign language syntax doesn't map 1:1 to spoken languages. Our integration with Gemini 2.5 Flash acts as a semantic bridge, transforming raw, disjointed glosses into perfectly structured Malay sentences.
+            </p>
+        </article>
+
+        <article class="capability-card opacity-0 translate-y-12 transition-all duration-700 ease-out delay-300 bg-gray-50 border border-gray-100 p-8 rounded-3xl hover:-translate-y-1 hover:shadow-lg group">
+            <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-green-500 mb-6 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-3 text-gray-900">Hardware Agnostic & Private</h4>
+            <p class="text-sm text-gray-600 leading-relaxed">
+                No expensive depth cameras or proprietary wearable gloves required. iSuara runs entirely off a standard 2D laptop webcam, making it universally accessible while processing skeletal data locally to preserve user privacy.
+            </p>
+        </article>
+
+        <article class="capability-card opacity-0 translate-y-12 transition-all duration-700 ease-out delay-300 bg-gray-50 border border-gray-100 p-8 rounded-3xl hover:-translate-y-1 hover:shadow-lg group">
+            <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-blue-500 mb-6 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-building-columns" aria-hidden="true"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-3 text-gray-900">Academic & Professional Focus</h4>
+            <p class="text-sm text-gray-600 leading-relaxed">
+                Unlike basic consumer translation apps, our vocabulary bank is specifically curated for tertiary education and corporate environments, allowing DHH users to participate in complex STEM discussions.
+            </p>
+        </article>
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15 // Triggers when 15% of the element is visible
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Remove hidden states and apply visible states
+                    entry.target.classList.remove('opacity-0', 'translate-y-12');
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
                     
-                    <article class="bg-gray-50 border border-gray-100 p-8 rounded-3xl hover:-translate-y-1 hover:shadow-lg transition-all duration-300 group">
-                        <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-orange-500 mb-6 group-hover:scale-110 transition-transform">
-                            <i class="fa-solid fa-bolt" aria-hidden="true"></i>
-                        </div>
-                        <h4 class="text-xl font-bold mb-3 text-gray-900">Real-Time Edge Inference</h4>
-                        <p class="text-sm text-gray-600 leading-relaxed">
-                            Built for speed. By running our custom LSTM model natively on the edge via TensorFlow Lite, we achieve ultra-low latency inference, ensuring conversations feel natural and uninterrupted.
-                        </p>
-                    </article>
+                    // Stop observing once animated so it doesn't repeat on scroll up
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
 
-                    <article class="bg-gray-50 border border-gray-100 p-8 rounded-3xl hover:-translate-y-1 hover:shadow-lg transition-all duration-300 group">
-                        <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-purple-600 mb-6 group-hover:scale-110 transition-transform">
-                            <i class="fa-solid fa-brain" aria-hidden="true"></i>
-                        </div>
-                        <h4 class="text-xl font-bold mb-3 text-gray-900">Semantic Contextualization</h4>
-                        <p class="text-sm text-gray-600 leading-relaxed">
-                            Sign language syntax doesn't map 1:1 to spoken languages. Our integration with Gemini 2.5 Flash acts as a semantic bridge, transforming raw, disjointed glosses into perfectly structured Malay sentences.
-                        </p>
-                    </article>
-
-                    <article class="bg-gray-50 border border-gray-100 p-8 rounded-3xl hover:-translate-y-1 hover:shadow-lg transition-all duration-300 group">
-                        <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-green-500 mb-6 group-hover:scale-110 transition-transform">
-                            <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
-                        </div>
-                        <h4 class="text-xl font-bold mb-3 text-gray-900">Hardware Agnostic & Private</h4>
-                        <p class="text-sm text-gray-600 leading-relaxed">
-                            No expensive depth cameras or proprietary wearable gloves required. iSuara runs entirely off a standard 2D laptop webcam, making it universally accessible while processing skeletal data locally to preserve user privacy.
-                        </p>
-                    </article>
-
-                    <article class="bg-gray-50 border border-gray-100 p-8 rounded-3xl hover:-translate-y-1 hover:shadow-lg transition-all duration-300 group">
-                        <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-blue-500 mb-6 group-hover:scale-110 transition-transform">
-                            <i class="fa-solid fa-building-columns" aria-hidden="true"></i>
-                        </div>
-                        <h4 class="text-xl font-bold mb-3 text-gray-900">Academic & Professional Focus</h4>
-                        <p class="text-sm text-gray-600 leading-relaxed">
-                            Unlike basic consumer translation apps, our vocabulary bank is specifically curated for tertiary education and corporate environments, allowing DHH users to participate in complex STEM discussions.
-                        </p>
-                    </article>
-
-                </div>
-            </div>
+        // Observe all capability cards
+        document.querySelectorAll('.capability-card').forEach((card) => {
+            observer.observe(card);
+        });
+    });
+</script>
 
         </div>
     </section>
@@ -610,45 +689,55 @@
 
     <!-- 6. USER TESTING & ITERATION -->
     <section id="testing" class="py-24 bg-gray-50">
-        <div class="max-w-[1400px] mx-auto px-6">
-            <span class="text-xs font-bold text-gray-500 tracking-widest uppercase mb-2 block">VALIDATION</span>
-            <h2 class="text-4xl font-extrabold text-black mb-12">User Testing & Iteration</h2>
-            <div class="max-w-[1400px] mx-auto px-6 mb-12 text-center">
+    <div class="max-w-[1400px] mx-auto px-6">
+        <span class="text-xs font-bold text-gray-500 tracking-widest uppercase mb-2 block">VALIDATION</span>
+        <h2 class="text-4xl font-extrabold text-black mb-12">User Testing & Iteration</h2>
+        <div class="max-w-[1400px] mx-auto px-6 mb-12 text-center">
             <span class="text-xs font-bold text-blue-500 tracking-widest uppercase mb-2 block">COMMUNITY FEEDBACK</span>
             <h2 class="text-4xl font-extrabold text-black">What Our Users Say</h2>
         </div>
 
-        <div class="relative w-full overflow-hidden flex rounded-3xl border border-gray-200 shadow-sm bg-white py-4">
+        <div class="relative w-full overflow-hidden flex rounded-3xl border border-gray-200 shadow-sm bg-white py-4 mb-12">
             
             <div class="absolute top-0 bottom-0 left-0 w-32 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
             <div class="absolute top-0 bottom-0 right-0 w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
 
             <div class="flex gap-6 animate-marquee py-4 px-3">
                 
-                <div class="w-[350px] flex-shrink-0 bg-gray-50 border border-gray-100 p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow cursor-default">
-                    <div class="flex text-yellow-400 text-sm mb-4">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <div class="w-[350px] flex-shrink-0 bg-red-50 border border-red-200 p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow cursor-default relative">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="flex text-yellow-500 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i>
+                        </div>
+                        <span class="inline-flex items-center gap-1.5 px-2 py-1 rounded-md bg-red-100 text-red-700 text-[10px] font-bold uppercase tracking-widest">
+                            <i class="fa-solid fa-triangle-exclamation"></i> Needs Improvement
+                        </span>
                     </div>
-                    <p class="text-gray-700 text-sm leading-relaxed mb-6">"It is a really good app, it doesn't require them to wear any specific devices like gloves, they just need to use the camera."</p>
+                    <p class="text-gray-800 text-sm leading-relaxed mb-6">"My hand sign is not detected when I signed just a bit faster"</p>
                     <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold">I</div>
+                        <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold">E</div>
                         <div>
-                            <h4 class="font-bold text-sm text-gray-900">Isma</h4>
-                            <span class="text-xs text-gray-500">BIM Interpreter</span>
+                            <h4 class="font-bold text-sm text-gray-900">Emmanual</h4>
+                            <span class="text-xs text-gray-500">UKM Speech Therapy Undergraduate</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="w-[350px] flex-shrink-0 bg-gray-50 border border-gray-100 p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow cursor-default">
-                    <div class="flex text-yellow-400 text-sm mb-4">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <div class="w-[350px] flex-shrink-0 bg-red-50 border border-red-200 p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow cursor-default relative">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="flex text-yellow-500 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="inline-flex items-center gap-1.5 px-2 py-1 rounded-md bg-red-100 text-red-700 text-[10px] font-bold uppercase tracking-widest">
+                            <i class="fa-solid fa-triangle-exclamation"></i> Needs Improvement
+                        </span>
                     </div>
-                    <p class="text-gray-700 text-sm leading-relaxed mb-6">"The translation into sentences is good as it forms good sentences and easy to understand."</p>
+                    <p class="text-gray-800 text-sm leading-relaxed mb-6">"When I stand a bit further, the app unable to detect my hand sign"</p>
                     <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center font-bold">U</div>
+                        <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold">L</div>
                         <div>
-                            <h4 class="font-bold text-sm text-gray-900">User Interview</h4>
-                            <span class="text-xs text-gray-500">Beta Tester</span>
+                            <h4 class="font-bold text-sm text-gray-900">LIM PEI YING</h4>
+                            <span class="text-xs text-gray-500">UKM Speech Therapy Undergraduates</span>
                         </div>
                     </div>
                 </div>
@@ -657,12 +746,12 @@
                     <div class="flex text-yellow-400 text-sm mb-4">
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
                     </div>
-                    <p class="text-gray-700 text-sm leading-relaxed mb-6">"Aplikasi ini sangat bagus. Tidak perlu pakai alat mahal, hanya guna kamera laptop."</p>
+                    <p class="text-gray-700 text-sm leading-relaxed mb-6">"This app have a great use of gemini api to rearrange the sentence format"</p>
                     <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-green-100 text-green-600 rounded-full flex items-center justify-center font-bold">S</div>
+                        <div class="w-10 h-10 bg-green-100 text-green-600 rounded-full flex items-center justify-center font-bold">L</div>
                         <div>
-                            <h4 class="font-bold text-sm text-gray-900">Survey Respondent</h4>
-                            <span class="text-xs text-gray-500">DHH Community</span>
+                            <h4 class="font-bold text-sm text-gray-900">LEE MING DAO</h4>
+                            <span class="text-xs text-gray-500">UM Computer Science(AI) undergraduate</span>
                         </div>
                     </div>
                 </div>
@@ -673,38 +762,48 @@
                     </div>
                     <p class="text-gray-700 text-sm leading-relaxed mb-6">"The real-time translation is quite fast... The sentence generation is very natural."</p>
                     <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center font-bold">S</div>
+                        <div class="w-10 h-10 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center font-bold">T</div>
                         <div>
-                            <h4 class="font-bold text-sm text-gray-900">Survey Respondent</h4>
-                            <span class="text-xs text-gray-500">App User</span>
+                            <h4 class="font-bold text-sm text-gray-900">TAN PEI PEI</h4>
+                            <span class="text-xs text-gray-500">Hearing Individuals</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="w-[350px] flex-shrink-0 bg-gray-50 border border-gray-100 p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow cursor-default">
-                    <div class="flex text-yellow-400 text-sm mb-4">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <div class="w-[350px] flex-shrink-0 bg-red-50 border border-red-200 p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow cursor-default relative">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="flex text-yellow-500 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="inline-flex items-center gap-1.5 px-2 py-1 rounded-md bg-red-100 text-red-700 text-[10px] font-bold uppercase tracking-widest">
+                            <i class="fa-solid fa-triangle-exclamation"></i> Needs Improvement
+                        </span>
                     </div>
-                    <p class="text-gray-700 text-sm leading-relaxed mb-6">"It is a really good app, it doesn't require them to wear any specific devices like gloves, they just need to use the camera."</p>
+                    <p class="text-gray-800 text-sm leading-relaxed mb-6">"The latency is quiet high, the detection occurs after a few seconds the sign is done"</p>
                     <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold">I</div>
+                        <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold">O</div>
                         <div>
-                            <h4 class="font-bold text-sm text-gray-900">Isma</h4>
-                            <span class="text-xs text-gray-500">BIM Interpreter</span>
+                            <h4 class="font-bold text-sm text-gray-900">ONG SHI JIE</h4>
+                            <span class="text-xs text-gray-500">UKM Speech Therapy Undergraduates</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="w-[350px] flex-shrink-0 bg-gray-50 border border-gray-100 p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow cursor-default">
-                    <div class="flex text-yellow-400 text-sm mb-4">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <div class="w-[350px] flex-shrink-0 bg-red-50 border border-red-200 p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow cursor-default relative">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="flex text-yellow-500 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="inline-flex items-center gap-1.5 px-2 py-1 rounded-md bg-red-100 text-red-700 text-[10px] font-bold uppercase tracking-widest">
+                            <i class="fa-solid fa-triangle-exclamation"></i> Needs Improvement
+                        </span>
                     </div>
-                    <p class="text-gray-700 text-sm leading-relaxed mb-6">"The translation into sentences is good as it forms good sentences and easy to understand."</p>
+                    <p class="text-gray-800 text-sm leading-relaxed mb-6">"The app sometimes misintepret sign that looks similar like "Kakak" to "Abang"</p>
                     <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center font-bold">U</div>
+                        <div class="w-10 h-10 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center font-bold">L</div>
                         <div>
-                            <h4 class="font-bold text-sm text-gray-900">User Interview</h4>
-                            <span class="text-xs text-gray-500">Beta Tester</span>
+                            <h4 class="font-bold text-sm text-gray-900">LOW ROU EN</h4>
+                            <span class="text-xs text-gray-500">UKM Speech Therapy Undergraduate</span>
                         </div>
                     </div>
                 </div>
@@ -713,106 +812,140 @@
                     <div class="flex text-yellow-400 text-sm mb-4">
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
                     </div>
-                    <p class="text-gray-700 text-sm leading-relaxed mb-6">"Aplikasi ini sangat bagus. Tidak perlu pakai alat mahal, hanya guna kamera laptop."</p>
+                    <p class="text-gray-700 text-sm leading-relaxed mb-6">"This app definitely will benefit the DHH community but the dictionary is still strictly limited"</p>
                     <div class="flex items-center gap-3">
                         <div class="w-10 h-10 bg-green-100 text-green-600 rounded-full flex items-center justify-center font-bold">S</div>
                         <div>
-                            <h4 class="font-bold text-sm text-gray-900">Survey Respondent</h4>
-                            <span class="text-xs text-gray-500">DHH Community</span>
+                            <h4 class="font-bold text-sm text-gray-900">SAW KAISON</h4>
+                            <span class="text-xs text-gray-500">UPM EEE undergraduate</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="w-[350px] flex-shrink-0 bg-gray-50 border border-gray-100 p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow cursor-default">
-                    <div class="flex text-yellow-400 text-sm mb-4">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <div class="w-[350px] flex-shrink-0 bg-red-50 border border-red-200 p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow cursor-default relative">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="flex text-yellow-500 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="inline-flex items-center gap-1.5 px-2 py-1 rounded-md bg-red-100 text-red-700 text-[10px] font-bold uppercase tracking-widest">
+                            <i class="fa-solid fa-triangle-exclamation"></i> Needs Improvement
+                        </span>
                     </div>
-                    <p class="text-gray-700 text-sm leading-relaxed mb-6">"The real-time translation is quite fast... The sentence generation is very natural."</p>
+                    <p class="text-gray-800 text-sm leading-relaxed mb-6">"Sometimes it cannot catch up when I sign a bit faster"</p>
                     <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center font-bold">S</div>
+                        <div class="w-10 h-10 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center font-bold">C</div>
                         <div>
-                            <h4 class="font-bold text-sm text-gray-900">Survey Respondent</h4>
-                            <span class="text-xs text-gray-500">App User</span>
+                            <h4 class="font-bold text-sm text-gray-900">CH’NG WEN YI</h4>
+                            <span class="text-xs text-gray-500">UKM Speech therapy undergraduate</span>
                         </div>
                     </div>
                 </div>
 
             </div>
         </div>
-            <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 mb-12">
-                <div class="grid grid-cols-1 md:grid-cols-2">
+
+        <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                
+                <div class="p-10 md:p-16 border-b md:border-b-0 md:border-r border-gray-100 bg-red-50/30">
+                    <span class="text-sm font-bold text-red-500 uppercase mb-4 block">Iteration 1</span>
+                    <h3 class="text-2xl font-bold mb-6">Initial Challenges</h3>
                     
-                    <div class="p-10 md:p-16 border-b md:border-b-0 md:border-r border-gray-100 bg-red-50/30">
-                        <span class="text-sm font-bold text-red-500 uppercase mb-4 block">Iteration 1</span>
-                        <h3 class="text-2xl font-bold mb-6">Initial Challenges</h3>
-                        
-                        <div class="space-y-6">
-                            <div>
-                                <h4 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Technical Performance</h4>
-                                <ul class="space-y-3">
-                                    <li class="flex items-start gap-3"><i class="fa-solid fa-xmark text-red-500 mt-1 flex-shrink-0" aria-hidden="true"></i> <span class="text-gray-600 text-sm">Camera tracking struggled with natural, rapid hand movements (latency).</span></li>
-                                    <li class="flex items-start gap-3"><i class="fa-solid fa-xmark text-red-500 mt-1 flex-shrink-0" aria-hidden="true"></i> <span class="text-gray-600 text-sm">Model failed to differentiate "minimal pairs" (similar signs like "Kakak" vs "Abang").</span></li>
-                                    <li class="flex items-start gap-3"><i class="fa-solid fa-xmark text-red-500 mt-1 flex-shrink-0" aria-hidden="true"></i> <span class="text-gray-600 text-sm">High environmental sensitivity; accuracy dropped when standing further away.</span></li>
-                                </ul>
-                            </div>
-                            
-                            <div>
-                                <h4 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">UX & Vocabulary</h4>
-                                <ul class="space-y-3">
-                                    <li class="flex items-start gap-3"><i class="fa-solid fa-xmark text-red-500 mt-1 flex-shrink-0" aria-hidden="true"></i> <span class="text-gray-600 text-sm">Severe vocabulary limitations (missing common words like "Makan").</span></li>
-                                    <li class="flex items-start gap-3"><i class="fa-solid fa-xmark text-red-500 mt-1 flex-shrink-0" aria-hidden="true"></i> <span class="text-gray-600 text-sm">Onboarding gap: "Green light" indicator was not intuitive for new users.</span></li>
-                                </ul>
-                            </div>
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Technical Performance</h4>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3"><i class="fa-solid fa-xmark text-red-500 mt-1 flex-shrink-0" aria-hidden="true"></i> <span class="text-gray-600 text-sm">Camera tracking struggled with natural, rapid hand movements (latency).</span></li>
+                                <li class="flex items-start gap-3"><i class="fa-solid fa-xmark text-red-500 mt-1 flex-shrink-0" aria-hidden="true"></i> <span class="text-gray-600 text-sm">Model failed to differentiate "minimal pairs" (similar signs like "Kakak" vs "Abang").</span></li>
+                                <li class="flex items-start gap-3"><i class="fa-solid fa-xmark text-red-500 mt-1 flex-shrink-0" aria-hidden="true"></i> <span class="text-gray-600 text-sm">High environmental sensitivity; accuracy dropped when standing further away.</span></li>
+                            </ul>
                         </div>
-                    </div>
-
-                    <div class="p-10 md:p-16 bg-green-50/30">
-                        <span class="text-sm font-bold text-green-600 uppercase mb-4 block">Iteration 2</span>
-                        <h3 class="text-2xl font-bold mb-6">Targeted Solutions</h3>
                         
-                        <div class="space-y-6">
-                            <div>
-                                <h4 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Architecture Upgrades</h4>
-                                <ul class="space-y-4">
-                                    <li class="flex items-start gap-3">
-                                        <i class="fa-solid fa-arrow-trend-up text-green-500 mt-1 flex-shrink-0" aria-hidden="true"></i> 
-                                        <span class="text-gray-600 text-sm">Migrate from LSTM to Transformer models to accurately resolve similar "minimal pairs".</span>
-                                    </li>
-                                    <li class="flex items-start gap-3">
-                                        <i class="fa-solid fa-arrow-trend-up text-green-500 mt-1 flex-shrink-0" aria-hidden="true"></i> 
-                                        <span class="text-gray-600 text-sm">Implement multi-threading for camera capture to eliminate frame processing latency.</span>
-                                    </li>
-                                    <li class="flex items-start gap-3">
-                                        <i class="fa-solid fa-arrow-trend-up text-green-500 mt-1 flex-shrink-0" aria-hidden="true"></i> 
-                                        <span class="text-gray-600 text-sm">Apply dynamic bounding boxes and shoulder-width normalization for distance invariance.</span>
-                                    </li>
-                                </ul>
-                            </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">UX & Vocabulary</h4>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3"><i class="fa-solid fa-xmark text-red-500 mt-1 flex-shrink-0" aria-hidden="true"></i> <span class="text-gray-600 text-sm">Severe vocabulary limitations (missing common words like "Makan").</span></li>
+                                <li class="flex items-start gap-3"><i class="fa-solid fa-xmark text-red-500 mt-1 flex-shrink-0" aria-hidden="true"></i> <span class="text-gray-600 text-sm">Onboarding gap: "Green light" indicator was not intuitive for new users.</span></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-                <div class="bg-white p-6 rounded-2xl shadow-sm">
-                    <div class="text-3xl font-black text-black mb-1">50+</div>
-                    <div class="text-xs text-gray-500 uppercase">Users Interviewed</div>
-                </div>
-                <div class="bg-white p-6 rounded-2xl shadow-sm">
-                    <div class="text-3xl font-black text-black mb-1">12</div>
-                    <div class="text-xs text-gray-500 uppercase">Design Sprints</div>
-                </div>
-                <div class="bg-white p-6 rounded-2xl shadow-sm">
-                    <div class="text-3xl font-black text-black mb-1">300</div>
-                    <div class="text-xs text-gray-500 uppercase">Bugs Squashed</div>
-                </div>
-                <div class="bg-white p-6 rounded-2xl shadow-sm">
-                    <div class="text-3xl font-black text-black mb-1">4.8/5</div>
-                    <div class="text-xs text-gray-500 uppercase">User Satisfaction</div>
-                </div>
+
+                <div class="p-10 md:p-16 bg-green-50/30">
+    <span class="text-sm font-bold text-green-600 uppercase mb-4 block">Iteration 2</span>
+    <h3 class="text-2xl font-bold mb-6">Targeted Solutions</h3>
+    
+    <div class="space-y-6">
+        <div>
+            <h4 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Architecture Upgrades</h4>
+            <ul class="space-y-4">
+                
+                <li class="flex items-start gap-3">
+                    <i class="fa-solid fa-arrow-trend-up text-green-500 mt-1 flex-shrink-0" aria-hidden="true"></i> 
+                    <span class="text-gray-600 text-sm">
+                        <strong class="text-gray-800">Parallel Processing & 60fps:</strong> 
+                        Split tasks between CPU and GPU to achieve a smooth 50fps, eliminating camera lag to easily catch rapid gestures.
+                    </span>
+                </li>
+
+                <li class="flex items-start gap-3">
+                    <i class="fa-solid fa-arrow-trend-up text-green-500 mt-1 flex-shrink-0" aria-hidden="true"></i> 
+                    <span class="text-gray-600 text-sm">
+                        <strong class="text-gray-800">Dynamic Hand Cropping:</strong> 
+                        Instantly track wrist coordinates to focus only on the hands, ensuring high accuracy even if the user stands far away.
+                    </span>
+                </li>
+
+                <li class="flex items-start gap-3">
+                    <i class="fa-solid fa-arrow-trend-up text-green-500 mt-1 flex-shrink-0" aria-hidden="true"></i> 
+                    <span class="text-gray-600 text-sm">
+                        <strong class="text-gray-800">Continuous Multi-Window Inference:</strong> 
+                        Analyze back-to-back frames dynamically to prevent missed gestures and accurately differentiate visually similar signs.
+                    </span>
+                </li>
+
+                <li class="flex items-start gap-3">
+                    <i class="fa-solid fa-arrow-trend-up text-green-500 mt-1 flex-shrink-0" aria-hidden="true"></i> 
+                    <span class="text-gray-600 text-sm">
+                        <strong class="text-gray-800">EMA Smoothing:</strong> 
+                        Exponential Moving Average (EMA) smoothing filters out single-frame visual noise so the model isn't tricked by a random anomaly.
+                </li>
+                <!--Download improve plan markdown file-->
+                <div class="mt-8 pt-6 border-t border-green-200/50">
+                <a href="Improve_Plan.md" download="Improve_Plan.md" class="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 hover:bg-green-700 text-white text-sm font-bold rounded-xl shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-0.5">
+                    <i class="fa-solid fa-file-arrow-down text-lg"></i>
+                    Download Improvement Plan (.md)
+                </a>
             </div>
 
+            </ul>
         </div>
-    </section>
+    </div>
+</div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="bg-white p-6 rounded-2xl shadow-sm">
+                <div class="text-3xl font-black text-black mb-1">50+</div>
+                <div class="text-xs text-gray-500 uppercase">Users Interviewed</div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm">
+                <div class="text-3xl font-black text-black mb-1">12</div>
+                <div class="text-xs text-gray-500 uppercase">Design Sprints</div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm">
+                <div class="text-3xl font-black text-black mb-1">300</div>
+                <div class="text-xs text-gray-500 uppercase">Bugs Squashed</div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm">
+                <div class="text-3xl font-black text-black mb-1">4.8/5</div>
+                <div class="text-xs text-gray-500 uppercase">User Satisfaction</div>
+            </div>
+        </div>
+
+    </div>
+</section>
 
         <!-- 7. CHALLENGES FACED -->
     <section id="challenges" class="py-24 bg-white overflow-hidden">
