@@ -1,0 +1,111 @@
+/* ========================================
+   iSuara - Custom Styles
+   ======================================== */
+
+/* Custom Styles for Effects */
+body {
+    background-color: #FAFAFA;
+    color: #1A1A1A;
+    overflow-x: hidden;
+}
+
+/* Glassmorphism */
+.glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.05);
+    transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Radar Effect */
+.radar-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+/* Hide Scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Smooth Text Selection */
+::selection {
+    background: #000;
+    color: #fff;
+}
+
+/* The continuous scrolling animation */
+@keyframes infinite-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+    animation: infinite-scroll 40s linear infinite;
+    width: max-content; 
+}
+.animate-marquee:hover {
+    animation-play-state: paused;
+}
+
+/* ========================================
+   How It Works - Sequence Animation
+   ======================================== */
+
+@keyframes sequenceFocus {
+    0% { 
+        opacity: 0.3; 
+        transform: translateY(0) scale(1);
+    }
+    12%, 22% { 
+        opacity: 1; 
+        transform: translateY(-12px) scale(1.05);
+    }
+    34%, 100% { 
+        opacity: 0.3; 
+        transform: translateY(0) scale(1);
+    }
+}
+
+.animate-step {
+    animation: sequenceFocus 9s infinite cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: opacity, transform;
+    opacity: 0.3; 
+}
+
+.delay-1 { animation-delay: 0s; }
+.delay-2 { animation-delay: 3s; }
+.delay-3 { animation-delay: 6s; }
+
+/* Pause all animations when the grid is hovered */
+.how-it-works-grid:hover .animate-step {
+    animation-play-state: paused;
+}
+
+/* Force the hovered item to pop out */
+.how-it-works-grid .animate-step:hover {
+    opacity: 1 !important;
+    transform: translateY(-12px) scale(1.05) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
