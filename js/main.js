@@ -111,8 +111,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // ALL DEVICES: Fade-ins and Number Counters
     mm.add("all", () => {
-        // Fade sections in
-        const sections = document.querySelectorAll('section > div');
+        // Fade sections in (skip #solution to preserve its CSS keyframe animations)
+        const sections = document.querySelectorAll('section:not(#solution) > div');
         sections.forEach(sec => {
             gsap.fromTo(sec,
                 { y: 30, opacity: 0 },
