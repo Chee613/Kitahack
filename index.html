@@ -10,9 +10,8 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800;900&amp;display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800;900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -133,31 +132,23 @@
         </div>
 
         <div class="relative z-10 text-center px-4 max-w-5xl mx-auto flex flex-col items-center">
-            <div
-                class="inline-flex items-center gap-2 bg-white border border-gray-200 rounded-full px-4 py-1.5 mb-6 md:mb-8 shadow-sm gs-reveal">
-                <i class="fa-solid fa-wand-magic-sparkles text-xs text-black"></i>
-                <span class="text-[10px] md:text-xs font-semibold uppercase tracking-wide text-gray-600">Project
-                    Documentation</span>
-            </div>
 
-            <h1
-                class="text-5xl md:text-8xl lg:text-[100px] font-black leading-[1.1] md:leading-[0.9] tracking-tight mb-4 md:mb-6 gs-reveal">
-                <span
-                    class="block bg-gradient-to-r from-[#012395] via-[#FFD100] to-[#ED1C24] text-transparent bg-clip-text pb-2">
-                    iSuara
+            <h1 class="font-['Outfit',_sans-serif] font-medium text-6xl md:text-9xl lg:text-[220px] leading-[1.1] md:leading-[0.9] tracking-tight mb-4 md:mb-6 gs-reveal text-center">
+                <span class="inline-flex items-baseline">
+                    <span class="relative inline-block text-gray-900">
+                        <svg class="absolute left-1/2 -translate-x-1/2 -top-[0.12em] w-[0.45em] h-[0.45em] text-[#8b5cf6] drop-shadow-[0_0_12px_rgba(139,92,246,0.9)] animate-pulse-slow pointer-events-none" 
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C12 6.627 17.373 12 24 12C17.373 12 12 17.373 12 24C12 17.373 6.627 12 0 12C6.627 12 12 6.627 12 0Z" />
+                        </svg>
+                        ı
+                    </span>
+                    <span class="text-gray-900">Suara</span>
                 </span>
             </h1>
 
-            <p class="text-base md:text-xl text-gray-700 max-w-2xl mx-auto mb-8 md:mb-10 gs-reveal font-light px-4">
+            <p class="text-base md:text-4xl text-gray-700 max-w-2xl mx-auto mb-8 md:mb-10 gs-reveal font-light px-4">
                 AI Powered Sign Language Interpreter</p>
 
-            <div class="w-full sm:w-auto px-4 gs-reveal">
-                <a href="https://www.thestar.com.my/lifestyle/living/2025/10/02/only-60-interpreters-for-44000-deaf-malaysians---why-the-community-struggles"
-                    target="_blank"
-                    class="bg-black text-white px-6 md:px-8 py-3 md:py-4 rounded-xl font-semibold flex items-center justify-center gap-2 hover:bg-gray-800 transition-all w-full sm:w-auto">
-                    Read More About News <i class="fa-solid fa-arrow-right text-sm"></i>
-                </a>
-            </div>
         </div>
     </section>
 
@@ -213,32 +204,41 @@
                 </div>
             </div>
 
+            <div class="max-w-4xl mx-auto mb-16 relative reveal-on-scroll is-visible">
+                <p class="text-center text-sm font-bold text-gray-500 uppercase tracking-widest mb-8">Why human interpreters aren't an option?
+                </p>
 
-            <div class="max-w-4xl mx-auto mb-16">
-                <p class="text-center text-sm font-bold text-gray-500 uppercase tracking-widest mb-8">Why human
-                    interpreters aren't an option?</p>
-                <div
-                    class="bg-gray-900 rounded-2xl text-white p-8 shadow-lg flex flex-col md:flex-row items-center divide-y md:divide-y-0 md:divide-x divide-gray-700">
+                <div class="bg-white rounded-3xl shadow-2xl overflow-hidden border-2 border-gray-900 flex flex-col">
+                    
+                    <div class="bg-gray-900 text-white p-8 md:p-12 relative flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16">
+                        
+                        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-14 h-14 bg-red-500 rounded-full items-center justify-center font-black text-white border-4 border-gray-900 z-10 hidden md:flex text-xl shadow-lg">
+                            VS
+                        </div>
 
-                    <div class="w-full md:w-1/2 text-center py-6 md:py-0 md:px-6">
-                        <div class="text-5xl font-bold text-red-400 mb-2">44,000</div>
-                        <div class="text-sm font-semibold uppercase tracking-wider opacity-80">Deaf Malaysians</div>
+                        <div class="text-center flex-1 w-full relative z-0">
+                            <div class="flex justify-center mb-3 text-red-400 text-4xl"><i class="fa-solid fa-users"></i></div>
+                            <div class="text-5xl md:text-7xl font-black text-white tracking-tight mb-2">44,000</div>
+                            <div class="text-sm font-black uppercase tracking-widest text-gray-400">Deaf Malaysians</div>
+                        </div>
+
+                        <div class="w-12 h-12 bg-red-500 rounded-full flex md:hidden items-center justify-center font-black text-white border-4 border-gray-900 z-10 text-lg shadow-lg my-2">
+                            VS
+                        </div>
+
+                        <div class="text-center flex-1 w-full relative z-0">
+                            <div class="flex justify-center mb-3 text-red-400 text-4xl"><i class="fa-solid fa-user-tie"></i></div>
+                            <div class="text-5xl md:text-7xl font-black text-red-400 tracking-tight mb-2">60</div>
+                            <div class="text-sm font-black uppercase tracking-widest text-gray-400">Total Interpreters</div>
+                        </div>
                     </div>
-
-                    <div class="w-full md:w-1/2 text-center py-6 md:py-0 md:px-6">
-                        <div class="text-5xl font-bold text-red-400 mb-2">60</div>
-                        <div class="text-sm font-semibold uppercase tracking-wider opacity-80">Total Interpreters</div>
-                    </div>
-
                 </div>
             </div>
-
         </div>
     </section>
 
     <section class="py-16 bg-white relative">
         <div class="max-w-6xl mx-auto px-6">
-
             <div class="text-center max-w-3xl mx-auto mb-12">
                 <span
                     class="text-xs font-bold text-red-500 tracking-widest uppercase mb-4 block">
@@ -248,27 +248,32 @@
                     Why Existing Tech Falls Short
                 </h2>
                 <p class="text-lg text-gray-600">
-                    Real conversation needs speed and context, not just a visual dictionary.
+                    There is no existing technology that supports real-time sign language interpretation for Malaysian Deaf communities.
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 md:gap-0">
 
-                <div class="bg-white border border-gray-200 rounded-[2rem] p-8 shadow-sm flex flex-col">
+                <div class="bg-white border border-gray-200 rounded-[2rem] p-8 shadow-sm flex flex-col max-w-md lg:ml-auto lg:mr-2 w-full">
 
                     <div class="flex items-center gap-5 mb-8 border-b border-gray-100 pb-6">
-                        <div
-                            class="w-14 h-14 bg-red-50 text-red-500 rounded-2xl flex items-center justify-center text-2xl shadow-sm border border-red-100 shrink-0">
+                        <div class="w-14 h-14 bg-red-50 text-red-500 rounded-2xl flex items-center justify-center text-2xl shadow-sm border border-red-100 shrink-0">
                             <i class="fa-solid fa-xmark"></i>
                         </div>
-                        <h3 class="text-2xl font-bold text-gray-900">Legacy Tech</h3>
+                        <h3 class="text-2xl font-bold text-gray-900">Existing App</h3>
                     </div>
 
                     <div class="flex flex-col gap-6">
                         <div class="flex items-center gap-4">
-                            <i class="fa-solid fa-vr-cardboard text-red-500 shrink-0 text-lg w-6 text-center"></i>
-                            <p class="text-gray-600"><strong class="text-gray-900 block">Expensive Hardware</strong>
-                                Relies on gloves or depth cameras.</p>
+                            <i class="fa-solid fa-book-open text-red-500 shrink-0 text-lg w-6 text-center"></i>
+                            <p class="text-gray-600"><strong class="text-gray-900 block">Study Tool</strong>
+                                Manual dictionary teaching sign language.</p>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <i class="fa-solid fa-earth-americas text-red-500 shrink-0 text-lg w-6 text-center"></i>
+                            <p class="text-gray-600"><strong class="text-gray-900 block">Foreign Sign Language</strong> Built
+                                for American Sign Language.</p>
                         </div>
 
                         <div class="flex items-center gap-4">
@@ -284,34 +289,37 @@
                         </div>
 
                         <div class="flex items-center gap-4">
-                            <i class="fa-solid fa-earth-americas text-red-500 shrink-0 text-lg w-6 text-center"></i>
-                            <p class="text-gray-600"><strong class="text-gray-900 block">Foreign Context</strong> Built
-                                for ASL, ignoring local nuance.</p>
+                            <i class="fa-solid fa-vr-cardboard text-red-500 shrink-0 text-lg w-6 text-center"></i>
+                            <p class="text-gray-600"><strong class="text-gray-900 block">Expensive Hardware</strong>
+                                Relies on gloves or depth cameras.</p>
                         </div>
+
                     </div>
                 </div>
 
-                <div
-                    class="bg-[#f2fdf5] border border-green-200 rounded-[2rem] p-8 shadow-sm flex flex-col relative overflow-hidden">
+                <div class="bg-[#f2fdf5] border border-green-200 rounded-[2rem] p-8 shadow-sm flex flex-col relative overflow-hidden max-w-md lg:mr-auto lg:ml-2 w-full">
 
-                    <div
-                        class="absolute -top-16 -right-16 w-64 h-64 bg-green-200 rounded-full opacity-30 blur-3xl pointer-events-none">
+                    <div class="absolute -top-16 -right-16 w-64 h-64 bg-green-200 rounded-full opacity-30 blur-3xl pointer-events-none">
                     </div>
 
                     <div class="flex items-center gap-5 mb-8 border-b border-green-200/60 pb-6 relative z-10">
-                        <div
-                            class="w-14 h-14 bg-green-500 text-white rounded-2xl flex items-center justify-center text-2xl shadow-sm border border-green-600 shrink-0">
+                        <div class="w-14 h-14 bg-green-500 text-white rounded-2xl flex items-center justify-center text-2xl shadow-sm border border-green-600 shrink-0">
                             <i class="fa-solid fa-check"></i>
                         </div>
-                        <h3 class="text-2xl font-bold text-green-950">iSuara Architecture</h3>
+                        <h3 class="text-2xl font-bold text-green-950">iSuara</h3>
                     </div>
 
                     <div class="flex flex-col gap-6 relative z-10">
                         <div class="flex items-center gap-4">
-                            <i
-                                class="fa-solid fa-mobile-screen-button text-green-600 shrink-0 text-lg w-6 text-center"></i>
-                            <p class="text-green-900"><strong class="font-bold block">Zero Extra Hardware</strong> Works
-                                on any standard smartphone.</p>
+                            <i class="fa-solid fa-comments text-green-600 shrink-0 text-lg w-6 text-center"></i>
+                            <p class="text-green-900"><strong class="font-bold block">Live Communication</strong>
+                                Sign-to-speech driven by real-time ML.</p>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <i class="fa-solid fa-map-location-dot text-green-600 shrink-0 text-lg w-6 text-center"></i>
+                            <p class="text-green-900"><strong class="font-bold block">Locally Trained</strong> Built
+                                for Bahasa Isyarat Malaysia.</p>
                         </div>
 
                         <div class="flex items-center gap-4">
@@ -327,10 +335,11 @@
                         </div>
 
                         <div class="flex items-center gap-4">
-                            <i class="fa-solid fa-map-location-dot text-green-600 shrink-0 text-lg w-6 text-center"></i>
-                            <p class="text-green-900"><strong class="font-bold block">Locally Trained</strong> Built
-                                specifically for Malaysian Sign Language (BIM).</p>
+                            <i class="fa-solid fa-mobile-screen-button text-green-600 shrink-0 text-lg w-6 text-center"></i>
+                            <p class="text-green-900"><strong class="font-bold block">Zero Extra Hardware</strong> Works
+                                on any standard smartphone.</p>
                         </div>
+
                     </div>
                 </div>
 
@@ -353,23 +362,21 @@
             <div id="sdg-cards-container"
                 class="relative w-full max-w-5xl h-[600px] flex items-center justify-center z-10">
 
-                <div class="sdg-card absolute w-[400px] md:w-[520px] min-h-[540px] rounded-3xl p-10 bg-white border-l-[12px] border-l-[#C5192D] shadow-2xl flex flex-col justify-between opacity-0"
+                <div class="sdg-card absolute w-[400px] md:w-[580px] min-h-[540px] rounded-3xl p-10 bg-white border-l-[12px] border-l-[#C5192D] shadow-2xl flex flex-col justify-between opacity-0"
                     style="transform: translate3d(115.216px, 0px, 0px) rotate(1.9927deg); z-index: 10; translate: none; rotate: none; scale: none; opacity: 0.6159;">
                     <div>
                         <div class="flex justify-between items-start mb-8">
-                            <div
-                                class="inline-flex items-center justify-center w-20 h-20 rounded-xl bg-[#C5192D] text-white shadow-sm">
+                            <div class="inline-flex items-center justify-center w-20 h-20 rounded-xl bg-[#C5192D] text-white shadow-sm">
                                 <span class="text-5xl font-black">4</span>
                             </div>
-                            <span
-                                class="text-sm font-bold text-[#C5192D] uppercase tracking-widest bg-red-50 px-3 py-1.5 rounded">Education</span>
+                            <span class="text-sm font-bold text-[#C5192D] uppercase tracking-widest bg-red-50 px-3 py-1.5 rounded">Education</span>
                         </div>
-                        <h3 class="text-4xl font-bold text-gray-900 font-serif mb-6">Quality Education</h3>
-                        <p class="text-gray-600 text-base leading-relaxed mb-5">
+                        <h3 class="text-6xl font-bold text-gray-900 font-serif mb-6">Quality Education</h3>
+                        <p class="text-gray-600 text-xl leading-relaxed mb-5">
                             <span class="font-bold text-[#C5192D]">Target 4.5:</span> Eliminate gender disparities &amp;
                             ensure equal access for the vulnerable.
                         </p>
-                        <p class="text-gray-600 text-base leading-relaxed">
+                        <p class="text-gray-600 text-xl leading-relaxed">
                             <span class="font-bold text-[#C5192D]">Target 4.a:</span> Build safe, non-violent, inclusive
                             &amp; effective learning environments.
                         </p>
@@ -379,19 +386,17 @@
                     </div>
                 </div>
 
-                <div class="sdg-card absolute w-[400px] md:w-[520px] min-h-[540px] rounded-3xl p-10 bg-white border-l-[12px] border-l-[#A21942] shadow-2xl flex flex-col justify-between opacity-0"
+                <div class="sdg-card absolute w-[400px] md:w-[580px] min-h-[540px] rounded-3xl p-10 bg-white border-l-[12px] border-l-[#A21942] shadow-2xl flex flex-col justify-between opacity-0"
                     style="transform: translate(300px, 0px) rotate(10.0001deg); z-index: 20; translate: none; rotate: none; scale: none; opacity: 0;">
                     <div>
                         <div class="flex justify-between items-start mb-8">
-                            <div
-                                class="inline-flex items-center justify-center w-20 h-20 rounded-xl bg-[#A21942] text-white shadow-sm">
+                            <div class="inline-flex items-center justify-center w-20 h-20 rounded-xl bg-[#A21942] text-white shadow-sm">
                                 <span class="text-5xl font-black">8</span>
                             </div>
-                            <span
-                                class="text-sm font-bold text-[#A21942] uppercase tracking-widest bg-pink-50 px-3 py-1.5 rounded">Economy</span>
+                            <span class="text-sm font-bold text-[#A21942] uppercase tracking-widest bg-pink-50 px-3 py-1.5 rounded">Economy</span>
                         </div>
-                        <h3 class="text-4xl font-bold text-gray-900 font-serif mb-6">Decent Work &amp; Growth</h3>
-                        <p class="text-gray-600 text-base leading-relaxed">
+                        <h3 class="text-6xl font-bold text-gray-900 font-serif mb-6">Decent Work</br> &amp; Growth</h3>
+                        <p class="text-gray-600 text-xl leading-relaxed">
                             <span class="font-bold text-[#A21942]">Target 8.5:</span> Achieve full &amp; productive
                             employment and decent work for all women and men, including young people and persons with
                             disabilities.
@@ -402,19 +407,17 @@
                     </div>
                 </div>
 
-                <div class="sdg-card absolute w-[400px] md:w-[520px] min-h-[540px] rounded-3xl p-10 bg-white border-l-[12px] border-l-[#FD6925] shadow-2xl flex flex-col justify-between opacity-0"
+                <div class="sdg-card absolute w-[400px] md:w-[580px] min-h-[540px] rounded-3xl p-10 bg-white border-l-[12px] border-l-[#FD6925] shadow-2xl flex flex-col justify-between opacity-0"
                     style="transform: translate(300px, 0px) rotate(10.0001deg); z-index: 30; translate: none; rotate: none; scale: none; opacity: 0;">
                     <div>
                         <div class="flex justify-between items-start mb-8">
-                            <div
-                                class="inline-flex items-center justify-center w-20 h-20 rounded-xl bg-[#FD6925] text-white shadow-sm">
+                            <div class="inline-flex items-center justify-center w-20 h-20 rounded-xl bg-[#FD6925] text-white shadow-sm">
                                 <span class="text-5xl font-black">9</span>
                             </div>
-                            <span
-                                class="text-sm font-bold text-[#FD6925] uppercase tracking-widest bg-orange-50 px-3 py-1.5 rounded">Innovation</span>
+                            <span class="text-sm font-bold text-[#FD6925] uppercase tracking-widest bg-orange-50 px-3 py-1.5 rounded">Innovation</span>
                         </div>
-                        <h3 class="text-4xl font-bold text-gray-900 font-serif mb-6">Industry &amp; Infrastructure</h3>
-                        <p class="text-gray-600 text-base leading-relaxed">
+                        <h3 class="text-6xl font-bold text-gray-900 font-serif mb-6">Industry &amp; Infrastructure</h3>
+                        <p class="text-gray-600 text-xl leading-relaxed">
                             <span class="font-bold text-[#FD6925]">Target 9.c:</span> Significantly increase access to
                             ICT and provide universal and affordable access to the Internet.
                         </p>
@@ -424,19 +427,17 @@
                     </div>
                 </div>
 
-                <div class="sdg-card absolute w-[400px] md:w-[520px] min-h-[540px] rounded-3xl p-10 bg-white border-l-[12px] border-l-[#DD1367] shadow-2xl flex flex-col justify-between opacity-0"
+                <div class="sdg-card absolute w-[400px] md:w-[580px] min-h-[540px] rounded-3xl p-10 bg-white border-l-[12px] border-l-[#DD1367] shadow-2xl flex flex-col justify-between opacity-0"
                     style="transform: translate(300px, 0px) rotate(10.0001deg); z-index: 40; translate: none; rotate: none; scale: none; opacity: 0;">
                     <div>
                         <div class="flex justify-between items-start mb-8">
-                            <div
-                                class="inline-flex items-center justify-center w-20 h-20 rounded-xl bg-[#DD1367] text-white shadow-sm">
+                            <div class="inline-flex items-center justify-center w-20 h-20 rounded-xl bg-[#DD1367] text-white shadow-sm">
                                 <span class="text-5xl font-black">10</span>
                             </div>
-                            <span
-                                class="text-sm font-bold text-[#DD1367] uppercase tracking-widest bg-pink-50 px-3 py-1.5 rounded">Equality</span>
+                            <span class="text-sm font-bold text-[#DD1367] uppercase tracking-widest bg-pink-50 px-3 py-1.5 rounded">Equality</span>
                         </div>
-                        <h3 class="text-4xl font-bold text-gray-900 font-serif mb-6">Reduced Inequalities</h3>
-                        <p class="text-gray-600 text-base leading-relaxed">
+                        <h3 class="text-6xl font-bold text-gray-900 font-serif mb-6">Reduced Inequalities</h3>
+                        <p class="text-gray-600 text-xl leading-relaxed">
                             <span class="font-bold text-[#DD1367]">Target 10.2:</span> Promote universal social,
                             economic and political inclusion of all, irrespective of age, sex, disability, race,
                             ethnicity, or status.
@@ -458,7 +459,7 @@
             <div class="text-center mb-10 max-w-4xl mx-auto">
                 <span class="text-xs font-bold text-blue-500 tracking-widest uppercase mb-4 block">FEATURES &
                     INNOVATION</span>
-                <h2 class="text-4xl md:text-5xl font-serif text-gray-900 leading-tight mb-4">Fluid. On-Device. Accurate.
+                <h2 class="text-4xl md:text-5xl font-serif text-gray-900 leading-tight mb-4">Secure. Swift. Sophisticated.
                 </h2>
                 <p class="text-gray-600 max-w-2xl mx-auto text-lg">Powered by Google AI Technologies to deliver
                     low-latency visual tracking and intelligent semantic translation.</p>
@@ -468,7 +469,7 @@
                 <h3 class="text-3xl font-black text-center mb-12 text-gray-900 uppercase tracking-wide">How It Works
                 </h3>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative how-it-works-grid">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto relative how-it-works-grid">
                     <div
                         class="hidden md:block absolute top-12 left-[16.66%] right-[16.66%] h-1 bg-gray-100 z-0 rounded-full">
                     </div>
@@ -483,12 +484,12 @@
                         <div class="space-y-3 w-full max-w-[240px]">
                             <div
                                 class="bg-blue-50 border border-blue-100 text-blue-900 rounded-xl p-3 text-sm shadow-sm flex items-center gap-3">
-                                <span class="text-lg">📱</span>
+                                <i class="fa-solid fa-camera text-blue-600 shrink-0 text-lg w-6 text-center"></i>
                                 <span class="font-semibold text-left leading-tight">Camera captures motion</span>
                             </div>
                             <div
                                 class="bg-blue-50 border border-blue-100 text-blue-900 rounded-xl p-3 text-sm shadow-sm flex items-center gap-3">
-                                <span class="text-lg">🖐️</span>
+                                <i class="fa-solid fa-hand text-blue-600 shrink-0 text-lg w-6 text-center"></i>
                                 <span class="font-semibold text-left leading-tight"><strong
                                         class="font-black">MediaPipe</strong> tracks hands</span>
                             </div>
@@ -505,13 +506,13 @@
                         <div class="space-y-3 w-full max-w-[240px]">
                             <div
                                 class="bg-orange-50 border border-orange-100 text-orange-900 rounded-xl p-3 text-sm shadow-sm flex items-center gap-3">
-                                <span class="text-lg">🧠</span>
+                                <i class="fa-solid fa-microchip text-orange-500 shrink-0 text-lg w-6 text-center"></i>
                                 <span class="font-semibold text-left leading-tight"><strong
                                         class="font-black">TensorFlow</strong> runs offline</span>
                             </div>
                             <div
                                 class="bg-orange-50 border border-orange-100 text-orange-900 rounded-xl p-3 text-sm shadow-sm flex items-center gap-3">
-                                <span class="text-lg">⚡</span>
+                                <i class="fa-solid fa-bolt-lightning text-orange-500 shrink-0 text-lg w-6 text-center"></i>
                                 <span class="font-semibold text-left leading-tight">Recognizes sign instantly</span>
                             </div>
                         </div>
@@ -527,18 +528,17 @@
                         <div class="space-y-3 w-full max-w-[240px]">
                             <div
                                 class="bg-purple-50 border border-purple-100 text-purple-900 rounded-xl p-3 text-sm shadow-sm flex items-center gap-3">
-                                <span class="text-lg">✨</span>
+                                <i class="fa-solid fa-wand-magic-sparkles text-purple-600 shrink-0 text-lg w-6 text-center"></i>
                                 <span class="font-semibold text-left leading-tight"><strong
                                         class="font-black">Gemini</strong> fixes grammar</span>
                             </div>
                             <div
                                 class="bg-purple-50 border border-purple-100 text-purple-900 rounded-xl p-3 text-sm shadow-sm flex items-center gap-3">
-                                <span class="text-lg">🔊</span>
+                                <i class="fa-solid fa-volume-high text-purple-600 shrink-0 text-lg w-6 text-center"></i>
                                 <span class="font-semibold text-left leading-tight">Phone speaks out loud</span>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
 
@@ -546,7 +546,7 @@
                 <h3 class="text-3xl font-black text-center mb-12 text-gray-900 uppercase tracking-wide">Key Features
                 </h3>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="capabilities-grid">
+                <div class="grid grid-cols-1 max-w-5xl mx-auto md:grid-cols-2 gap-6" id="capabilities-grid">
 
                     <article
                         class="bg-white border border-gray-100 rounded-3xl p-6 shadow-sm hover:shadow-lg transition-shadow sequence-card seq-1">
@@ -728,7 +728,7 @@
                     </div>
 
                     <div
-                        class="bg-white p-5 rounded-3xl border-2 border-dashed border-blue-300 shadow-sm relative z-10 hover:border-blue-500 transition-colors bg-blue-50/30">
+                        class="bg-white p-5 rounded-3xl border-2 border-dashed border-blue-500 shadow-sm relative z-10 hover:border-blue-500 transition-colors bg-blue-50/30">
                         <div
                             class="absolute -top-3 left-6 bg-blue-600 text-white text-xs font-black px-4 py-1 rounded-full uppercase tracking-widest">
                             Skeletal Extraction</div>
@@ -810,7 +810,7 @@
                                 <div>
                                     <h4 class="text-slate-900 font-black text-2xl">Gemini 2.5 Flash</h4>
                                     <p class="text-[11px] text-purple-600 font-black uppercase tracking-widest mt-1">
-                                        Cloud Semantics & TTS</p>
+                                        Cloud Semantics</p>
                                 </div>
                             </div>
 
